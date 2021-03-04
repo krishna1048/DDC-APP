@@ -1,0 +1,7 @@
+{
+  "name": "DDC_SUPER",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
