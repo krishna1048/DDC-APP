@@ -1,0 +1,8 @@
+{
+  "name": "DDC_SUPER",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
