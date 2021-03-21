@@ -20,6 +20,10 @@ const routes: Routes = [
   {
     path: 'learn',
     loadChildren: () => import('./learn/learn.module').then( m => m.LearnPageModule)
+  },
+  {
+    path: 'yang-zhi',
+    loadChildren: () => import('./yang-zhi/yang-zhi.module').then( m => m.YangZhiPageModule)
   }
 ];
 @NgModule({
