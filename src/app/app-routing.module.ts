@@ -24,6 +24,30 @@ const routes: Routes = [
   {
     path: 'yang-zhi',
     loadChildren: () => import('./yang-zhi/yang-zhi.module').then( m => m.YangZhiPageModule)
+  },
+  {
+    path: 'dhog-chen',
+    loadChildren: () => import('./dhog-chen/dhog-chen.module').then( m => m.DhogChenPageModule)
+  },
+  {
+    path: 'la-ta',
+    loadChildren: () => import('./la-ta/la-ta.module').then( m => m.LaTaPageModule)
+  },
+  {
+    path: 'ra-ta',
+    loadChildren: () => import('./ra-ta/ra-ta.module').then( m => m.RaTaPageModule)
+  },
+  {
+    path: 'wa-ta',
+    loadChildren: () => import('./wa-ta/wa-ta.module').then( m => m.WaTaPageModule)
+  },
+  {
+    path: 'ya-ta',
+    loadChildren: () => import('./ya-ta/ya-ta.module').then( m => m.YaTaPageModule)
+  },
+  {
+    path: 'jang-kha',
+    loadChildren: () => import('./jang-kha/jang-kha.module').then( m => m.JangKhaPageModule)
   }
 ];
 @NgModule({

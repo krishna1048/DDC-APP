@@ -8,7 +8,13 @@ ion-col{
   display: flex;
   text-align: center;
 }
-p{
+.big{
   color: black;
+  font-size: 30px;
   font-family: 'DDC_Uchen';
+}
+p{
+  font-family: 'DDC_Uchen';
+  font-size: 15px;
+  color: dodgerblue;
 }
