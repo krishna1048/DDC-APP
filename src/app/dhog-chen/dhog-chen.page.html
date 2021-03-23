@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button text="" defaultHref="/tabs/tab1"></ion-back-button>
     </ion-buttons>
-    <ion-title style="color:dodgerblue;" size="medium">འདོགས་ཅན་བཞི།</ion-title>
+    <ion-title style="color:dodgerblue;font-family: DDC_Uchen" size="medium">འདོགས་ཅན་བཞི།</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -13,7 +13,7 @@
       <ion-col >
         <ion-card>
           <p class="big">ླ</p>
-          <ion-icon name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+          <ion-icon (click)="laTag()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
 
           <a  href="/la-ta" style="text-decoration: none"> <p >དཔེར་བརྗོད།</p></a>
         </ion-card>
@@ -21,7 +21,7 @@
       <ion-col >
         <ion-card>
           <p class="big">ྲ</p>
-          <ion-icon name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+          <ion-icon  (click)="raTag()"name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
 
           <a  href="/ra-ta" style="text-decoration: none"> <p >དཔེར་བརྗོད།</p></a>
         </ion-card>
