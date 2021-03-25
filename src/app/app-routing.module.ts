@@ -48,7 +48,8 @@ const routes: Routes = [
   {
     path: 'jang-kha',
     loadChildren: () => import('./jang-kha/jang-kha.module').then( m => m.JangKhaPageModule)
-  },  {
+  },
+  {
     path: 'go-chen',
     loadChildren: () => import('./go-chen/go-chen.module').then( m => m.GoChenPageModule)
   },
@@ -61,21 +62,8 @@ const routes: Routes = [
     loadChildren: () => import('./ra-go/ra-go.module').then( m => m.RaGoPageModule)
   },
   {
-<<<<<<< HEAD
     path: 'sa-go',
     loadChildren: () => import('./sa-go/sa-go.module').then( m => m.SaGoPageModule)
-=======
-    path: 'jang-kha',
-    loadChildren: () => import('./jang-kha/jang-kha.module').then( m => m.JangKhaPageModule)
-  },
-  {
-    path: 'za-dhuen',
-    loadChildren: () => import('./za-dhuen/za-dhuen.module').then( m => m.ZaDhuenPageModule)
-  },
-  {
-    path: 'colours',
-    loadChildren: () => import('./colours/colours.module').then( m => m.ColoursPageModule)
->>>>>>> 6ad9c3d0a73ed03d6bed6a13e036e0b16f75c5f9
   }
 
 ];

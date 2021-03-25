@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Howl, Howler} from 'howler';
 
 @Component({
   selector: 'app-go-chen',
@@ -12,4 +13,23 @@ export class GoChenPage implements OnInit {
   ngOnInit() {
   }
 
+  raGo() {
+    var sound = new Howl({
+      src: ['./assets/superscripts/sound/ra_go.mp3']
+    });
+    sound.play();
+  }
+  laGo() {
+    var sound = new Howl({
+      src: ['./assets/superscripts/sound/la_go.mp3']
+    });
+    sound.play();
+  }
+
+  saGo() {
+    var sound = new Howl({
+      src: ['./assets/superscripts/sound/sa_go.mp3']
+    });
+    sound.play();
+  }
 }
