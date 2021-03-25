@@ -64,7 +64,20 @@ const routes: Routes = [
   {
     path: 'sa-go',
     loadChildren: () => import('./sa-go/sa-go.module').then( m => m.SaGoPageModule)
+  },
+  {
+    path: 'fruits',
+    loadChildren: () => import('./fruits/fruits.module').then( m => m.FruitsPageModule)
+  },
+  {
+    path: 'colours',
+    loadChildren: () => import('./colours/colours.module').then( m => m.ColoursPageModule)
+  },
+  {
+    path: 'za-dhuen',
+    loadChildren: () => import('./za-dhuen/za-dhuen.module').then( m => m.ZaDhuenPageModule)
   }
+
 
 ];
 @NgModule({
