@@ -2,15 +2,15 @@ ion-card{
   width: 100%;
   height: auto;
   margin: 0 0 10px 0;
-
 }
+
 ion-col{
   display: flex;
   text-align: center;
 }
 .big{
   color: black;
-  font-size: 30px;
+  font-size: 40px;
   font-family: 'DDC_Uchen';
 }
 p{
@@ -18,3 +18,13 @@ p{
   font-size: 15px;
   color: dodgerblue;
 }
+
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
