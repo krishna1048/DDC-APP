@@ -15,13 +15,27 @@ export class DhogChenPage implements OnInit {
 
   laTag() {
     var sound = new Howl({
-      src: ['./assets/sounds/la_tag.mp3']
+      src: ['./assets/subscripts/sound/la_tag.mp3']
     });
     sound.play();
   }
   raTag() {
     var sound = new Howl({
-      src: ['./assets/sounds/ra_tag.mp3']
+      src: ['./assets/subscripts/sound/ra_tag.mp3']
+    });
+    sound.play();
+  }
+
+  waTag() {
+    var sound = new Howl({
+      src: ['./assets/subscripts/sound/wa_tag.mp3']
+    });
+    sound.play();
+  }
+
+  yaTag() {
+    var sound = new Howl({
+      src: ['./assets/subscripts/sound/ya_tag.mp3']
     });
     sound.play();
   }

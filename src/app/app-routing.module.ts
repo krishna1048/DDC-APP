@@ -48,6 +48,14 @@ const routes: Routes = [
   {
     path: 'jang-kha',
     loadChildren: () => import('./jang-kha/jang-kha.module').then( m => m.JangKhaPageModule)
+  },
+  {
+    path: 'za-dhuen',
+    loadChildren: () => import('./za-dhuen/za-dhuen.module').then( m => m.ZaDhuenPageModule)
+  },
+  {
+    path: 'colours',
+    loadChildren: () => import('./colours/colours.module').then( m => m.ColoursPageModule)
   }
 ];
 @NgModule({
