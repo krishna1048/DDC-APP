@@ -48,7 +48,23 @@ const routes: Routes = [
   {
     path: 'jang-kha',
     loadChildren: () => import('./jang-kha/jang-kha.module').then( m => m.JangKhaPageModule)
+  },  {
+    path: 'go-chen',
+    loadChildren: () => import('./go-chen/go-chen.module').then( m => m.GoChenPageModule)
+  },
+  {
+    path: 'la-go',
+    loadChildren: () => import('./la-go/la-go.module').then( m => m.LaGoPageModule)
+  },
+  {
+    path: 'ra-go',
+    loadChildren: () => import('./ra-go/ra-go.module').then( m => m.RaGoPageModule)
+  },
+  {
+    path: 'sa-go',
+    loadChildren: () => import('./sa-go/sa-go.module').then( m => m.SaGoPageModule)
   }
+
 ];
 @NgModule({
   imports: [
