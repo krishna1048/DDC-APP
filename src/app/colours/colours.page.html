@@ -1,9 +1,127 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>colours</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="color:dodgerblue;font-family: DDC_Uchen" size="medium">ཚོས་གཞི།</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-slides pager="true">
+    <ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: black">
+          <ion-row>
+            <ion-col>
+            <p>གནགཔོ</p>
+            </ion-col>
 
+          </ion-row>
+
+        </ion-card>
+        <ion-icon (click)="black()" name="volume-high-outline" style="margin-top:15px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: blue">
+          <ion-row>
+            <ion-col>
+            <p style="color: white">ཧོནམོ</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon (click)="blue()" name="volume-high-outline" style="margin-top:15px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: #6a2203">
+          <ion-row>
+            <ion-col>
+            <p style="color: white">སྨུགཔོ</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon (click)="brown()" name="volume-high-outline" style="margin-top:15px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: green">
+          <ion-row>
+            <ion-col>
+            <p style="color: white">ལྕང་ཁ</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon (click)="green()" name="volume-high-outline" style="margin-top:15px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: orange">
+          <ion-row>
+            <ion-col>
+            <p style="color: white">ལི་ཝང</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon (click)="orange()" name="volume-high-outline" style="margin-top:15px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: red">
+          <ion-row>
+            <ion-col>
+            <p style="color: white">དམརཔོ</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon (click)="red()" name="volume-high-outline" style="margin-top:15px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: white">
+          <ion-row>
+            <ion-col>
+            <p style="">དཀརཔོ</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon (click)="white()" name="volume-high-outline" style="margin-top:15px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: yellow">
+          <ion-row>
+            <ion-col>
+            <p style="color: white">སེརཔོ</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon (click)="yellow()" name="volume-high-outline" style="margin-top:15px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+      </ion-grid>
+    </ion-slide>
+  </ion-slides>
 </ion-content>
