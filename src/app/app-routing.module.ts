@@ -72,9 +72,18 @@ const routes: Routes = [
   {
     path: 'za-dhuen',
     loadChildren: () => import('./za-dhuen/za-dhuen.module').then( m => m.ZaDhuenPageModule)
-  },  {
+  },
+  {
     path: 'vegetables',
     loadChildren: () => import('./vegetables/vegetables.module').then( m => m.VegetablesPageModule)
+  },
+  {
+    path: 'fruits',
+    loadChildren: () => import('./fruits/fruits.module').then( m => m.FruitsPageModule)
+  },
+  {
+    path: 'level-one',
+    loadChildren: () => import('./level-one/level-one.module').then( m => m.LevelOnePageModule)
   },
 
 

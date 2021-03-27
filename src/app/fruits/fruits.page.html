@@ -1,0 +1,635 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="color:dodgerblue;font-family: DDC_Uchen" size="medium">ཤིང་འབྲས།</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-slides pager="true">
+    <ion-slide>
+      <ion-grid>
+        <ion-card>
+
+          <ion-row>
+            <ion-col>
+              <img src="./assets/fruits/image/apple.jpg">
+
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+
+        <ion-card>
+
+
+          <ion-row>
+            <ion-col>
+              <p>ཨེ་པཱལ།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="apple()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+
+          <ion-row>
+            <ion-col>
+              <img src="./assets/fruits/image/avocado.jpg">
+
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+
+        <ion-card>
+
+
+          <ion-row>
+            <ion-col>
+              <p>གུ་ལི།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="avocado()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+
+          <ion-row>
+            <ion-col>
+              <img src="./assets/fruits/image/banana.jpg">
+
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+
+        <ion-card>
+
+
+          <ion-row>
+            <ion-col>
+              <p>ངང་ལག།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="banana()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+
+          <ion-row>
+            <ion-col>
+              <img src="./assets/fruits/image/cucumber.jpg">
+
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+
+        <ion-card>
+
+
+          <ion-row>
+            <ion-col>
+              <p>གོན།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="cucumber()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+
+          <ion-row>
+            <ion-col>
+              <img src="./assets/fruits/image/fig.jpg">
+
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+
+        <ion-card>
+
+
+          <ion-row>
+            <ion-col>
+              <p>བ་ཀུ།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="fig()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+
+          <ion-row>
+            <ion-col>
+              <img src="./assets/fruits/image/grapes.jpg">
+
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+
+        <ion-card>
+
+
+          <ion-row>
+            <ion-col>
+              <p>རྒྱ་གར་རྒུན་འབྲུམ།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="grapes()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+
+          <ion-row>
+            <ion-col>
+              <img src="./assets/fruits/image/guava.jpg">
+
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+
+        <ion-card>
+
+
+          <ion-row>
+            <ion-col>
+              <p>བལཔ་སེའུ།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="guava()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+
+          <ion-row>
+            <ion-col>
+              <img src="./assets/fruits/image/gundrum.jpg">
+
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+
+        <ion-card>
+
+
+          <ion-row>
+            <ion-col>
+              <p>རྒུན་འབྲུམ།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="gundrum()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+
+          <ion-row>
+            <ion-col>
+              <img src="./assets/fruits/image/hazelnut.jpg">
+
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+
+        <ion-card>
+
+
+          <ion-row>
+            <ion-col>
+              <p>ཧ་ཟས།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="hazelnut()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+
+          <ion-row>
+            <ion-col>
+              <img src="./assets/fruits/image/jackfruit.jpg">
+
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+
+        <ion-card>
+
+
+          <ion-row>
+            <ion-col>
+              <p>སྦྲམ་ཟས།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="jackfruit()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+
+          <ion-row>
+            <ion-col>
+              <img src="./assets/fruits/image/lemon.jpg">
+
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+
+        <ion-card>
+
+
+          <ion-row>
+            <ion-col>
+              <p>ཧུམ་པ།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="lemon()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+
+          <ion-row>
+            <ion-col>
+              <img src="./assets/fruits/image/litchi.jpg">
+
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+
+        <ion-card>
+
+
+          <ion-row>
+            <ion-col>
+              <p>རྒྱ་གར་ཕོད་ཙི།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="litchi()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+
+          <ion-row>
+            <ion-col>
+              <img src="./assets/fruits/image/mango.jpg">
+
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+
+        <ion-card>
+
+
+          <ion-row>
+            <ion-col>
+              <p>ཨམ་ཅུ་ཀུ་ལི།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="mango()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+
+          <ion-row>
+            <ion-col>
+              <img src="./assets/fruits/image/orange.jpg">
+
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+
+        <ion-card>
+
+
+          <ion-row>
+            <ion-col>
+              <p>ཚལ་ལུ།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="orange()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-card>
+
+          <ion-row>
+            <ion-col>
+              <img src="./assets/fruits/image/passion_fruit.jpg">
+
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+
+        <ion-card>
+
+
+          <ion-row>
+            <ion-col>
+              <p>རྒྱ་གར་སྐྱུརཔོ།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="passion()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+
+          <ion-row>
+            <ion-col>
+              <img src="./assets/fruits/image/peach.jpg">
+
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+
+        <ion-card>
+
+
+          <ion-row>
+            <ion-col>
+              <p>ཁམ།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="peach()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+
+          <ion-row>
+            <ion-col>
+              <img src="./assets/fruits/image/pear.jpg">
+
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+
+        <ion-card>
+
+
+          <ion-row>
+            <ion-col>
+              <p>གླི།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="pear()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+
+          <ion-row>
+            <ion-col>
+              <img src="./assets/fruits/image/persimmon.jpg">
+
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+
+        <ion-card>
+
+
+          <ion-row>
+            <ion-col>
+              <p>ཨན་འབྲས།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="persimmon()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+
+          <ion-row>
+            <ion-col>
+              <img src="./assets/fruits/image/pine_apple.jpg">
+
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+
+        <ion-card>
+
+
+          <ion-row>
+            <ion-col>
+              <p>རྒྱ་ནག་ཀོང་ཙེ།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="pine_apple()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+
+          <ion-row>
+            <ion-col>
+              <img src="./assets/fruits/image/plum.jpg">
+
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+
+        <ion-card>
+
+
+          <ion-row>
+            <ion-col>
+              <p>མངར་རིས་ཁམ།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="plum()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+
+          <ion-row>
+            <ion-col>
+              <img src="./assets/fruits/image/pomegranate.jpg">
+
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+
+        <ion-card>
+
+
+          <ion-row>
+            <ion-col>
+              <p>སིན་འབྲུ།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="pomegranate()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+
+          <ion-row>
+            <ion-col>
+              <img src="./assets/fruits/image/sugar_cane.jpg">
+
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+
+        <ion-card>
+
+
+          <ion-row>
+            <ion-col>
+              <p>གུན་ཆ།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="sugar_cane()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+
+          <ion-row>
+            <ion-col>
+              <img src="./assets/fruits/image/watermelon.jpg">
+
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+
+        <ion-card>
+
+
+          <ion-row>
+            <ion-col>
+              <p>ཨ་པའི་མགུ་ཏོ།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="monday()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
