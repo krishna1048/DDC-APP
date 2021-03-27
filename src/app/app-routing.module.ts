@@ -85,8 +85,18 @@ const routes: Routes = [
     path: 'level-one',
     loadChildren: () => import('./level-one/level-one.module').then( m => m.LevelOnePageModule)
   },
-
-
+{
+    path: 'd-animals',
+    loadChildren: () => import('./d-animals/d-animals.module').then( m => m.DAnimalsPageModule)
+  },
+  {
+    path: 'w-animals',
+    loadChildren: () => import('./w-animals/w-animals.module').then( m => m.WAnimalsPageModule)
+  },
+  {
+    path: 'birds',
+    loadChildren: () => import('./birds/birds.module').then( m => m.BirdsPageModule)
+  }
 ];
 @NgModule({
   imports: [
