@@ -62,12 +62,21 @@ const routes: Routes = [
     loadChildren: () => import('./ra-go/ra-go.module').then( m => m.RaGoPageModule)
   },
   {
+    path: 'sa-go',
+    loadChildren: () => import('./sa-go/sa-go.module').then( m => m.SaGoPageModule)
+  },
+  {
     path: 'colours',
     loadChildren: () => import('./colours/colours.module').then( m => m.ColoursPageModule)
-  },  {
+  },
+  {
     path: 'za-dhuen',
     loadChildren: () => import('./za-dhuen/za-dhuen.module').then( m => m.ZaDhuenPageModule)
+  },  {
+    path: 'vegetables',
+    loadChildren: () => import('./vegetables/vegetables.module').then( m => m.VegetablesPageModule)
   },
+
 
 ];
 @NgModule({
