@@ -145,6 +145,14 @@ const routes: Routes = [
   {
     path: 'd-animals',
     loadChildren: () => import('./d-animals/d-animals.module').then( m => m.DAnimalsPageModule)
+  },
+  {
+    path: 'w-animals',
+    loadChildren: () => import('./w-animals/w-animals.module').then( m => m.WAnimalsPageModule)
+  },
+  {
+    path: 'birds',
+    loadChildren: () => import('./birds/birds.module').then( m => m.BirdsPageModule)
   }
 
 
