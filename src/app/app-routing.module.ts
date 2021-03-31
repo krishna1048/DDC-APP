@@ -96,7 +96,11 @@ const routes: Routes = [
   {
     path: 'birds',
     loadChildren: () => import('./birds/birds.module').then( m => m.BirdsPageModule)
-  }
+  },
+  {
+    path: 'instructions',
+    loadChildren: () => import('./instructions/instructions.module').then( m => m.InstructionsPageModule)
+  },
 ];
 @NgModule({
   imports: [
