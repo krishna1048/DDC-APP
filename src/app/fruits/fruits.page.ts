@@ -19,7 +19,6 @@ export class FruitsPage implements OnInit {
     });
     sound.play();
   }
-  
   avocado() {
     var sound = new Howl({
       src: ['./assets/fruits/sound/avocado.mp3']
