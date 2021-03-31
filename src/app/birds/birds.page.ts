@@ -15,106 +15,106 @@ export class BirdsPage implements OnInit {
 
   blacked_n_crane() {
     var sound = new Howl({
-      src: ['./assets/w_animals/sound/barking_deer.mp3']
+      src: ['./assets/birds/sound/blacked_n_crane.mp3']
     });
     sound.play();
   }
   
   common_maya() {
     var sound = new Howl({
-      src: ['./assets/w_animals/sound/bear.mp3']
+      src: ['./assets/birds/sound/common_maya.mp3']
     });
     sound.play();
   }
   crow() {
     var sound = new Howl({
-      src: ['./assets/w_animals/sound/boar.mp3']
+      src: ['./assets/birds/sound/crow.mp3']
     });
     sound.play();
   }
 
   cuckoo() {
     var sound = new Howl({
-      src: ['./assets/w_animals/sound/deer.mp3']
+      src: ['./assets/birds/sound/cuckoo.mp3']
     });
     sound.play();
   }
 
   dove() {
     var sound = new Howl({
-      src: ['./assets/w_animals/sound/elephant.mp3']
+      src: ['./assets/birds/sound/dove.mp3']
     });
     sound.play();
   }
   duck() {
     var sound = new Howl({
-      src: ['./assets/w_animals/sound/fox.mp3']
+      src: ['./assets/birds/sound/duck.mp3']
     });
     sound.play();
   }
   eagle() {
     var sound = new Howl({
-      src: ['./assets/w_animals/sound/ibex.mp3']
+      src: ['./assets/birds/sound/eagle.mp3']
     });
     sound.play();
   }
   hoopoe() {
     var sound = new Howl({
-      src: ['./assets/w_animals/sound/leopard.mp3']
+      src: ['./assets/birds/sound/hoopoe.mp3']
     });
     sound.play();
   }
   kalij() {
     var sound = new Howl({
-      src: ['./assets/w_animals/sound/lion.mp3']
+      src: ['./assets/birds/sound/kalij.mp3']
     });
     sound.play();
   }
   owl() {
     var sound = new Howl({
-      src: ['./assets/w_animals/sound/monkey.mp3']
+      src: ['./assets/birds/sound/owl.mp3']
     });
     sound.play();
   }
   peacock() {
     var sound = new Howl({
-      src: ['./assets/w_animals/sound/musk_deer.mp3']
+      src: ['./assets/birds/sound/peacock.mp3']
     });
     sound.play();
   }
   pigeon() {
     var sound = new Howl({
-      src: ['./assets/w_animals/sound/rabbit.mp3']
+      src: ['./assets/birds/sound/pigeon.mp3']
     });
     sound.play();
   }
   swallow() {
     var sound = new Howl({
-      src: ['./assets/w_animals/sound/red_panda.mp3']
+      src: ['./assets/birds/sound/swallow.mp3']
     });
     sound.play();
   }
   swan() {
     var sound = new Howl({
-      src: ['./assets/w_animals/sound/rhino.mp3']
+      src: ['./assets/birds/sound/swan.mp3']
     });
     sound.play();
   }
   thanka() {
     var sound = new Howl({
-      src: ['./assets/w_animals/sound/tiger.mp3']
+      src: ['./assets/birds/sound/thanka.mp3']
     });
     sound.play();
   }
   vulture() {
     var sound = new Howl({
-      src: ['./assets/w_animals/sound/wild_dog.mp3']
+      src: ['./assets/birds/sound/vulture.mp3']
     });
     sound.play();
   }
   water_bird() {
     var sound = new Howl({
-      src: ['./assets/w_animals/sound/wild_dog.mp3']
+      src: ['./assets/birds/sound/water_bird.mp3']
     });
     sound.play();
   }
