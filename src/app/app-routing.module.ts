@@ -100,7 +100,11 @@ const routes: Routes = [
   {
     path: 'instructions',
     loadChildren: () => import('./instructions/instructions.module').then( m => m.InstructionsPageModule)
+  },  {
+    path: 'm-animals',
+    loadChildren: () => import('./m-animals/m-animals.module').then( m => m.MAnimalsPageModule)
   },
+
 ];
 @NgModule({
   imports: [
