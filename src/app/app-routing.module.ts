@@ -104,6 +104,10 @@ const routes: Routes = [
     path: 'm-animals',
     loadChildren: () => import('./m-animals/m-animals.module').then( m => m.MAnimalsPageModule)
   },
+  {
+    path: 'flowers',
+    loadChildren: () => import('./flowers/flowers.module').then( m => m.FlowersPageModule)
+  },
 
 ];
 @NgModule({
