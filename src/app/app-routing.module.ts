@@ -108,6 +108,10 @@ const routes: Routes = [
     path: 'flowers',
     loadChildren: () => import('./flowers/flowers.module').then( m => m.FlowersPageModule)
   },
+  {
+    path: 'utensils',
+    loadChildren: () => import('./utensils/utensils.module').then( m => m.UtensilsPageModule)
+  },
 
 ];
 @NgModule({
