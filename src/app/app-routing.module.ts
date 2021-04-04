@@ -112,6 +112,14 @@ const routes: Routes = [
     path: 'utensils',
     loadChildren: () => import('./utensils/utensils.module').then( m => m.UtensilsPageModule)
   },
+  {
+    path: 'foods',
+    loadChildren: () => import('./foods/foods.module').then( m => m.FoodsPageModule)
+  },
+  {
+    path: 'drinks',
+    loadChildren: () => import('./drinks/drinks.module').then( m => m.DrinksPageModule)
+  },
 
 ];
 @NgModule({
