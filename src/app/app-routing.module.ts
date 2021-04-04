@@ -94,10 +94,6 @@ const routes: Routes = [
     loadChildren: () => import('./w-animals/w-animals.module').then( m => m.WAnimalsPageModule)
   },
   {
-    path: 'birds',
-    loadChildren: () => import('./birds/birds.module').then( m => m.BirdsPageModule)
-  },
-  {
     path: 'instructions',
     loadChildren: () => import('./instructions/instructions.module').then( m => m.InstructionsPageModule)
   },
