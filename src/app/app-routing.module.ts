@@ -117,6 +117,7 @@ const routes: Routes = [
     path: 'drinks',
     loadChildren: () => import('./drinks/drinks.module').then( m => m.DrinksPageModule)
   },
+
 ];
 @NgModule({
   imports: [
