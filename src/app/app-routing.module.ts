@@ -97,6 +97,26 @@ const routes: Routes = [
     path: 'instructions',
     loadChildren: () => import('./instructions/instructions.module').then( m => m.InstructionsPageModule)
   },
+  {
+    path: 'birds',
+    loadChildren: () => import('./birds/birds.module').then( m => m.BirdsPageModule)
+  },
+  {
+    path: 'flowers',
+    loadChildren: () => import('./flowers/flowers.module').then( m => m.FlowersPageModule)
+  },
+  {
+    path: 'utensils',
+    loadChildren: () => import('./utensils/utensils.module').then( m => m.UtensilsPageModule)
+  },
+  {
+    path: 'foods',
+    loadChildren: () => import('./foods/foods.module').then( m => m.FoodsPageModule)
+  },
+  {
+    path: 'drinks',
+    loadChildren: () => import('./drinks/drinks.module').then( m => m.DrinksPageModule)
+  },
 ];
 @NgModule({
   imports: [

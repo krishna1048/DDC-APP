@@ -23,44 +23,45 @@
         <ion-row>
           <ion-col>
             <ion-card-header style="font-weight: bold;font-size: 17px;font-family: DDC_Uchen">༡</ion-card-header>
-            <ion-card-content>ཁཕཏུ་ཏཁཕཏུ་ཁུཏཕཁ་མཏམད་ཏབམཁཏ་ཏམདབལཏམ་ཏམབདཏལམད་ཏདབཏམདབ་ཏམདཏམད།</ion-card-content>
+            <ion-card-content style="font-family: DDC_Uchen">འོག་ལུ་བཀལ་ཡོད་མི་གསལ་བྱེད་བའི་སྒྲད་ངོས་འཛིན་འབད།</ion-card-content>
           </ion-col>
         </ion-row>
         <ion-row>
           <ion-col>
             <ion-card-header style="font-weight: bold;font-size: 17px">Q1</ion-card-header>
-            <ion-card-content>Hello world Hello world Hello world Hello world Hello world </ion-card-content>
+            <ion-card-content>Guess the consonant based on sound you hear below. </ion-card-content>
           </ion-col>
         </ion-row>
       </ion-card>
-        <ion-list lines="none">
-          <ion-radio-group value="grape">
-            <ion-list-header>
-            </ion-list-header>
+      <ion-icon (click)="ka()" name="volume-high-outline" style="font-size: 30px;color:#95e52e;border: 1px solid #95e52e; border-radius: 100%;padding:8px"></ion-icon>
+
+      <ion-list lines="none">
+          <ion-radio-group [(ngModel)]="answer">
+
             <ion-card>
               <ion-item>
-                <ion-label>Option 1</ion-label>
-                <ion-radio slot="start"></ion-radio>
+                <ion-label style="  font-family: DDC_Uchen;">འ</ion-label>
+                <ion-radio slot="start" value="པ" ></ion-radio>
               </ion-item>
             </ion-card><ion-card>
               <ion-item>
-                <ion-label>Option 2</ion-label>
-                <ion-radio slot="start"></ion-radio>
+                <ion-label style="  font-family: DDC_Uchen;">ར</ion-label>
+                <ion-radio slot="start" value="ང" ></ion-radio>
               </ion-item>
             </ion-card><ion-card>
               <ion-item>
-                <ion-label>Option 3</ion-label>
-                <ion-radio slot="start"></ion-radio>
+                <ion-label style="  font-family: DDC_Uchen;">ཀ</ion-label>
+                <ion-radio slot="start" value="ཀ" ></ion-radio>
               </ion-item>
             </ion-card><ion-card>
               <ion-item>
-                <ion-label>Option 4</ion-label>
-                <ion-radio slot="start"></ion-radio>
+                <ion-label style="  font-family: DDC_Uchen;">ཕ</ion-label>
+                <ion-radio slot="start" value="ལ" ></ion-radio>
               </ion-item>
             </ion-card>
           </ion-radio-group>
         </ion-list>
-
+      <ion-button (click)="submit()" shape="round">Confirm</ion-button>
     </ion-grid>
     </ion-slide>
     <ion-slide>
