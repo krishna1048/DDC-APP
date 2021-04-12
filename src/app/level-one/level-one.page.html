@@ -7,8 +7,8 @@
       <ion-col style="color: #95e52e"></ion-col>
       <ion-col style="background-color: #95e52e;border-radius: 10px;color: white">
         Level 1
-      </ion-col>
-      <ion-col style="color: #95e52e"> M:0</ion-col>
+      </ion-col>x
+      <ion-col style="color: #95e52e">M:{{score}}</ion-col>
     </ion-row>
 
   </ion-toolbar>
@@ -23,7 +23,7 @@
         <ion-row>
           <ion-col>
             <ion-card-header style="font-weight: bold;font-size: 17px;font-family: DDC_Uchen">༡</ion-card-header>
-            <ion-card-content style="font-family: DDC_Uchen">འོག་ལུ་བཀལ་ཡོད་མི་གསལ་བྱེད་བའི་སྒྲད་ངོས་འཛིན་འབད།</ion-card-content>
+            <ion-card-content style="font-family: DDC_Uchen">འོག་ལུ་བཀལ་ཡོད་མི་གསལ་བྱེདའི་སྒྲ་ངོས་འཛིན་འབད།</ion-card-content>
           </ion-col>
         </ion-row>
         <ion-row>
@@ -61,7 +61,7 @@
             </ion-card>
           </ion-radio-group>
         </ion-list>
-      <ion-button (click)="submit()" shape="round">Confirm</ion-button>
+      <ion-button (click)="goToSlide()" shape="round">Confirm</ion-button>
     </ion-grid>
     </ion-slide>
     <ion-slide>

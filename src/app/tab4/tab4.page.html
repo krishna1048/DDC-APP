@@ -1,9 +1,20 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>tab4</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="success" expand="full" (click)="undo()"> Undo</ion-button>
+      <ion-button color="danger" expand="full" (click)="clear()"> Clear</ion-button>
+    </ion-buttons>
+    <ion-title style="color:dodgerblue;font-family: DDC_Uchen" size="medium">
+     སྦྱང་བ།
+    </ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-content>
-
-</ion-content>
+<div id="container" style="position:relative">
+<ion-card class="ion-padding">
+  <div class="signature-pad">
+    <div>
+      <canvas class="signature-pad-canvas" #canvas width="900" height="400" style="touch-action: none;"></canvas>
+    </div>
+  </div>
+</ion-card>
+</div>
