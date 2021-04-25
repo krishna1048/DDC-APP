@@ -120,6 +120,18 @@ const routes: Routes = [
     path: 'drinks',
     loadChildren: () => import('./drinks/drinks.module').then( m => m.DrinksPageModule)
   },
+  {
+    path: 'honorific',
+    loadChildren: () => import('./honorific/honorific.module').then( m => m.HonorificPageModule)
+  },
+  {
+    path: 'greetings',
+    loadChildren: () => import('./greetings/greetings.module').then( m => m.GreetingsPageModule)
+  },
+  {
+    path: 'body-parts',
+    loadChildren: () => import('./body-parts/body-parts.module').then( m => m.BodyPartsPageModule)
+  },
 
 ];
 @NgModule({

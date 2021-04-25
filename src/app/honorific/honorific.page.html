@@ -1,0 +1,695 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="color:dodgerblue;font-family: DDC_Uchen" size="medium">ཞེ་ས་ཕལ་སྐད།</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-slides pager="true">
+    <ion-slide>
+      <ion-grid>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཕལ་སྐད།</div>
+          <ion-row>
+            <ion-col>
+              <p>གོ་ལ།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon name="swap-vertical-outline" style="font-size: 30px;color: dodgerblue"></ion-icon>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཞེ་ས།</div>
+
+          <ion-row>
+            <ion-col>
+              <p>ན་བཟའ།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="cloth()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཕལ་སྐད།</div>
+          <ion-row>
+            <ion-col>
+              <p>མགུ་ཏོ།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon name="swap-vertical-outline" style="font-size: 30px;color: dodgerblue"></ion-icon>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཞེ་ས།</div>
+
+          <ion-row>
+            <ion-col>
+              <p>དབུ།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="head()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཕལ་སྐད།</div>
+          <ion-row>
+            <ion-col>
+              <p>སྐྱ།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon name="swap-vertical-outline" style="font-size: 30px;color: dodgerblue"></ion-icon>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཞེ་ས།</div>
+
+          <ion-row>
+            <ion-col>
+              <p>དབུ་སྐྲ།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="hair()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཕལ་སྐད།</div>
+          <ion-row>
+            <ion-col>
+              <p>དཔྱལཝ།
+              </p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon name="swap-vertical-outline" style="font-size: 30px;color: dodgerblue"></ion-icon>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཞེ་ས།</div>
+
+          <ion-row>
+            <ion-col>
+              <p>སྐུ་ཐོད།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="forehead()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཕལ་སྐད།</div>
+          <ion-row>
+            <ion-col>
+              <p>རྣམ་ཅོ།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon name="swap-vertical-outline" style="font-size: 30px;color: dodgerblue"></ion-icon>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཞེ་ས།</div>
+
+          <ion-row>
+            <ion-col>
+              <p>ཉན།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="ear()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཕལ་སྐད།</div>
+          <ion-row>
+            <ion-col>
+              <p>མིག་ཏོ།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon name="swap-vertical-outline" style="font-size: 30px;color: dodgerblue"></ion-icon>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཞེ་ས།</div>
+
+          <ion-row>
+            <ion-col>
+              <p>སྤྱན།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="eye()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཕལ་སྐད།</div>
+          <ion-row>
+            <ion-col>
+              <p>མིག་རྫིམ།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon name="swap-vertical-outline" style="font-size: 30px;color: dodgerblue"></ion-icon>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཞེ་ས།</div>
+
+          <ion-row>
+            <ion-col>
+              <p>སྤྱན་རྫིམ།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="eyebrow()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཕལ་སྐད།</div>
+          <ion-row>
+            <ion-col>
+              <p>ལྷ་པ།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon name="swap-vertical-outline" style="font-size: 30px;color: dodgerblue"></ion-icon>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཞེ་ས།</div>
+
+          <ion-row>
+            <ion-col>
+              <p>ཤངས།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="nose()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཕལ་སྐད།</div>
+          <ion-row>
+            <ion-col>
+              <p>ཁ།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon name="swap-vertical-outline" style="font-size: 30px;color: dodgerblue"></ion-icon>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཞེ་ས།</div>
+
+          <ion-row>
+            <ion-col>
+              <p>ཞལ།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="mouth()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཕལ་སྐད།</div>
+          <ion-row>
+            <ion-col>
+              <p>སོ།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon name="swap-vertical-outline" style="font-size: 30px;color: dodgerblue"></ion-icon>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཞེ་ས།</div>
+
+          <ion-row>
+            <ion-col>
+              <p>ཚེམས།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="teeth()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཕལ་སྐད།</div>
+          <ion-row>
+            <ion-col>
+              <p>ལྕེ།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon name="swap-vertical-outline" style="font-size: 30px;color: dodgerblue"></ion-icon>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཞེ་ས།</div>
+
+          <ion-row>
+            <ion-col>
+              <p>ལྗགས།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="tongue()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཕལ་སྐད།</div>
+          <ion-row>
+            <ion-col>
+              <p>གདོང་།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon name="swap-vertical-outline" style="font-size: 30px;color: dodgerblue"></ion-icon>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཞེ་ས།</div>
+
+          <ion-row>
+            <ion-col>
+              <p>ཞལ།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="face()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཕལ་སྐད།</div>
+          <ion-row>
+            <ion-col>
+              <p>ལགཔ།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon name="swap-vertical-outline" style="font-size: 30px;color: dodgerblue"></ion-icon>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཞེ་ས།</div>
+
+          <ion-row>
+            <ion-col>
+              <p>ཕྱག།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="hand()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཕལ་སྐད།</div>
+          <ion-row>
+            <ion-col>
+              <p>ལག་མཐིལ།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon name="swap-vertical-outline" style="font-size: 30px;color: dodgerblue"></ion-icon>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཞེ་ས།</div>
+
+          <ion-row>
+            <ion-col>
+              <p>ཕྱག་མཐིལ།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="palm()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཕལ་སྐད།</div>
+          <ion-row>
+            <ion-col>
+              <p>མཛུབ་མོ།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon name="swap-vertical-outline" style="font-size: 30px;color: dodgerblue"></ion-icon>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཞེ་ས།</div>
+
+          <ion-row>
+            <ion-col>
+              <p>ཕྱག་མཛུབ།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="finger()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཕལ་སྐད།</div>
+          <ion-row>
+            <ion-col>
+              <p>སེན་མོ།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon name="swap-vertical-outline" style="font-size: 30px;color: dodgerblue"></ion-icon>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཞེ་ས།</div>
+
+          <ion-row>
+            <ion-col>
+              <p>ཕྱག་སེན།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="nail()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཕལ་སྐད།</div>
+          <ion-row>
+            <ion-col>
+              <p>རྐམ།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon name="swap-vertical-outline" style="font-size: 30px;color: dodgerblue"></ion-icon>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཞེ་ས།</div>
+
+          <ion-row>
+            <ion-col>
+              <p>ཞབས།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="leg()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཕལ་སྐད།</div>
+          <ion-row>
+            <ion-col>
+              <p>པུས་མོ།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon name="swap-vertical-outline" style="font-size: 30px;color: dodgerblue"></ion-icon>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཞེ་ས།</div>
+
+          <ion-row>
+            <ion-col>
+              <p>ཞབས་པུས།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="knee()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཕལ་སྐད།</div>
+          <ion-row>
+            <ion-col>
+              <p>རྟིངས།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon name="swap-vertical-outline" style="font-size: 30px;color: dodgerblue"></ion-icon>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཞེ་ས།</div>
+
+          <ion-row>
+            <ion-col>
+              <p>ཞབས་རྟིངས།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="heel()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཕལ་སྐད།</div>
+          <ion-row>
+            <ion-col>
+              <p>ཨ་པ།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon name="swap-vertical-outline" style="font-size: 30px;color: dodgerblue"></ion-icon>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཞེ་ས།</div>
+
+          <ion-row>
+            <ion-col>
+              <p>ཡབ།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="father()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཕལ་སྐད།</div>
+          <ion-row>
+            <ion-col>
+              <p>ཨའི།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon name="swap-vertical-outline" style="font-size: 30px;color: dodgerblue"></ion-icon>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཞེ་ས།</div>
+
+          <ion-row>
+            <ion-col>
+              <p>ཡུམ།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="mother()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཕལ་སྐད།</div>
+          <ion-row>
+            <ion-col>
+              <p>སྤུན་ཆ།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon name="swap-vertical-outline" style="font-size: 30px;color: dodgerblue"></ion-icon>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཞེ་ས།</div>
+
+          <ion-row>
+            <ion-col>
+              <p>སྐུ་སྤུན།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="relatives()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཕལ་སྐད།</div>
+          <ion-row>
+            <ion-col>
+              <p>བཞེས་སྒོ།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon name="swap-vertical-outline" style="font-size: 30px;color: dodgerblue"></ion-icon>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཞེ་ས།</div>
+
+          <ion-row>
+            <ion-col>
+              <p>གསོལཝ།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="food()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཕལ་སྐད།</div>
+          <ion-row>
+            <ion-col>
+              <p>སྡོད།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon name="swap-vertical-outline" style="font-size: 30px;color: dodgerblue"></ion-icon>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཞེ་ས།</div>
+
+          <ion-row>
+            <ion-col>
+              <p>བཞུགས།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="sit()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཕལ་སྐད།</div>
+          <ion-row>
+            <ion-col>
+              <p>ཡར་ལོང་།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon name="swap-vertical-outline" style="font-size: 30px;color: dodgerblue"></ion-icon>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཞེ་ས།</div>
+
+          <ion-row>
+            <ion-col>
+              <p>བཞེངས།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="stand()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཕལ་སྐད།</div>
+          <ion-row>
+            <ion-col>
+              <p>ཉལ།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon name="swap-vertical-outline" style="font-size: 30px;color: dodgerblue"></ion-icon>
+        <ion-card>
+          <div class="topleft" style="position: absolute; font-weight:bold;; font-weight:bold;;top: 8px;left: 16px;color: dodgerblue;font-family: DDC_Uchen">ཞེ་ས།</div>
+
+          <ion-row>
+            <ion-col>
+              <p>གཟིམ།</p>
+            </ion-col>
+
+          </ion-row>
+          <ion-icon (click)="sleep()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+        </ion-card>
+      </ion-grid>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
