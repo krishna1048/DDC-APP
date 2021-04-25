@@ -19,7 +19,7 @@ export class BirdsPage implements OnInit {
     });
     sound.play();
   }
-  
+
   common_maya() {
     var sound = new Howl({
       src: ['./assets/birds/sound/common_maya.mp3']

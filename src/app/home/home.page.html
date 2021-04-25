@@ -6,7 +6,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content >
   <div id="container" >
 
       <ion-card-header>
@@ -14,25 +14,21 @@
           <ion-img src="./assets/logo.png">
           </ion-img>
         </ion-card-title>
-        <ion-card-subtitle style="font-family: DDC_Uchen;padding-top: 10px;font-size: 20px">
+        <ion-card-subtitle style="font-family: DDC_Uchen;font-size: 20px">
           ཨ་ལོའི་དོན་ལུ་རྫོང་ཁ།
         </ion-card-subtitle>
       </ion-card-header>
 
       <ion-card-content>
-        <ion-button expand="block" fill="solid" shape="round" color="primary" routerLink="/tabs">
+        <ion-button expand="block" fill="solid" shape="round" color="primary" routerLink="/tabs" >
           <ion-icon name="book"></ion-icon> &nbsp;Learn Dzongkha
         </ion-button>
         <br>
         <ion-button expand="block" fill="solid" shape="round" color="danger" routerLink="/tabs/tab2">
           <ion-icon name="pencil"></ion-icon> &nbsp;Take Quiz
         </ion-button>
+        <br>
       </ion-card-content>
     <hr>
-    <a routerLink="/instructions" style="text-decoration: none">
-      <p style="color: #1e90ff">App Instructions</p>
-      <ion-icon name="chevron-forward-circle" style="color: dodgerblue;font-size: 30px"></ion-icon>
-    </a>
-
   </div>
 </ion-content>

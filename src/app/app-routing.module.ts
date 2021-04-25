@@ -94,15 +94,12 @@ const routes: Routes = [
     loadChildren: () => import('./w-animals/w-animals.module').then( m => m.WAnimalsPageModule)
   },
   {
-    path: 'birds',
-    loadChildren: () => import('./birds/birds.module').then( m => m.BirdsPageModule)
-  },
-  {
     path: 'instructions',
     loadChildren: () => import('./instructions/instructions.module').then( m => m.InstructionsPageModule)
-  },  {
-    path: 'm-animals',
-    loadChildren: () => import('./m-animals/m-animals.module').then( m => m.MAnimalsPageModule)
+  },
+  {
+    path: 'birds',
+    loadChildren: () => import('./birds/birds.module').then( m => m.BirdsPageModule)
   },
   {
     path: 'flowers',
