@@ -15,25 +15,29 @@ export class YangZhiPage implements OnInit {
   }
   geKu() {
     var sound = new Howl({
-      src: ['./assets/yang-zhi/Geku.mp3']
+      src: ['./assets/Tenselo/yangzhi/giku.wav'],
+      volume:30
     });
     sound.play();
   }
   zhabZhu() {
     var sound = new Howl({
-      src: ['./assets/yang-zhi/Zhabchu.mp3']
+      src: ['./assets/Tenselo/yangzhi/zhabju.wav'],
+      volume:30
     });
     sound.play();
   }
   drenBo() {
     var sound = new Howl({
-      src: ['./assets/yang-zhi/Dengbu.mp3']
+      src: ['./assets/Tenselo/yangzhi/dambo.wav'],
+      volume:30
     });
     sound.play();
   }
   naro() {
     var sound = new Howl({
-      src: ['./assets/yang-zhi/Naro.mp3']
+      src: ['./assets/Tenselo/yangzhi/naro.wav'],
+      volume:30
     });
     sound.play();
   }

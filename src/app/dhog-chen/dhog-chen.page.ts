@@ -21,7 +21,8 @@ export class DhogChenPage implements OnInit {
   }
   raTag() {
     var sound = new Howl({
-      src: ['./assets/subscripts/sound/ra_tag.mp3']
+      src: ['./assets/Tenselo/missing sound/ratha chuzhi.wav'],
+      volume:30
     });
     sound.play();
   }

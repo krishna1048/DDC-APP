@@ -1,0 +1,128 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="/tabs/tab3"></ion-back-button>
+
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button color="primary" expand="full" routerLink="/instructions">
+        <ion-icon name="information-circle" style="font-size: 25px"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title style="color:dodgerblue;font-family: DDC_Uchen" size="medium">
+      རྗོད་སྒྲ་རིག་པ།
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title style="color:dodgerblue;" size="medium" >Dzongkha Phonetics</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <br>
+  <div id="container" style="position:relative">
+    <ion-slides>
+      <ion-slide>
+        <ion-grid>
+          <ion-card>
+            <ion-row>
+              <ion-col>
+                <img src="./assets/w_animals/image/barking_deer.jpg">
+              </ion-col>
+
+            </ion-row>
+
+          </ion-card>
+          <span style="color:dodgerblue;font-family: DDC_Uchen;font-size: 35px;font-weight: bold">ཀ</span>
+          <ion-card>
+            <ion-row>
+              <ion-col>
+                <p>ཀ་ཤ།</p>
+              </ion-col>
+
+            </ion-row>
+            <ion-icon  (click)="kasha()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+          </ion-card>
+        </ion-grid>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-grid>
+          <ion-card>
+            <ion-row>
+              <ion-col>
+                <img src="./assets/phonetics_pics/chair.jpg">
+              </ion-col>
+
+            </ion-row>
+
+          </ion-card>
+          <span style="color:dodgerblue;font-family: DDC_Uchen;font-size: 35px;font-weight: bold">ཀ</span>
+          <ion-card>
+            <ion-row>
+              <ion-col>
+                <p>རྐང་ཁྲི།</p>
+              </ion-col>
+
+            </ion-row>
+            <ion-icon  (click)="chair()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+          </ion-card>
+        </ion-grid>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-grid>
+          <ion-card>
+            <ion-row>
+              <ion-col>
+                <img src="./assets/vegetables/image/potato.jpg">
+              </ion-col>
+
+            </ion-row>
+
+          </ion-card>
+          <span style="color:dodgerblue;font-family: DDC_Uchen;font-size: 35px;font-weight: bold">ཀ</span>
+          <ion-card>
+            <ion-row>
+              <ion-col>
+                <p>ཀེ་བ།</p>
+              </ion-col>
+
+            </ion-row>
+            <ion-icon  (click)="potato()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+          </ion-card>
+        </ion-grid>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-grid>
+          <ion-card>
+            <ion-row>
+              <ion-col>
+                <img src="./assets/phonetics_pics/lips.jpg">
+              </ion-col>
+
+            </ion-row>
+
+          </ion-card>
+          <span style="color:dodgerblue;font-family: DDC_Uchen;font-size: 35px;font-weight: bold">ཁ</span>
+          <ion-card>
+            <ion-row>
+              <ion-col>
+                <p>ཁ།</p>
+              </ion-col>
+
+            </ion-row>
+            <ion-icon  (click)="lips()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+          </ion-card>
+        </ion-grid>
+      </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>

@@ -8,7 +8,7 @@
       <ion-col style="background-color: #95e52e;border-radius: 10px;color: white">
         Level 1
       </ion-col>
-      <ion-col style="color: #95e52e">M:{{score}}</ion-col>
+      <ion-col style="color: #95e52e">Score:<span style="font-weight: bold">{{score}}</span></ion-col>
     </ion-row>
 
   </ion-toolbar>
@@ -16,14 +16,14 @@
 
 <ion-content>
   <div id="container" >
-  <ion-slides >
+  <ion-slides>
     <ion-slide>
     <ion-grid>
       <ion-card style="background-color: rgba(149,229,46,0.4)">
         <ion-row>
           <ion-col>
             <ion-card-header style="font-weight: bold;font-size: 17px;font-family: DDC_Uchen">༡</ion-card-header>
-            <ion-card-content style="font-fefamily: DDC_Uchen">འོག་ལུ་བཀལ་ཡོད་མི་གསལ་བྱེདའི་སྒྲ་ངོས་འཛིན་འབད།</ion-card-content>
+            <ion-card-content style="font-family: DDC_Uchen">འོག་ལུ་བཀལ་ཡོད་མི་གསལ་བྱེདའི་སྒྲ་ངོས་འཛིན་འབད།</ion-card-content>
           </ion-col>
         </ion-row>
         <ion-row>
@@ -114,54 +114,578 @@
           <ion-row>
             <ion-col>
               <ion-card-header style="font-weight: bold;font-size: 17px;font-family: DDC_Uchen">༣</ion-card-header>
-              <ion-card-content>འོག་ལུ་བཀལ་ཡོད་མི་གསལ་བྱེདའི་སྒྲ་ངོས་འཛིན་འབད།</ion-card-content>
+              <ion-card-content>འོག་ལུ་བཀལ་ཡོད་མི་དབྱངསའི་སྒྲ་ངོས་འཛིན་འབད།</ion-card-content>
             </ion-col>
           </ion-row>
           <ion-row>
           <ion-col>
             <ion-card-header style="font-weight: bold;font-size: 17px">Q3</ion-card-header>
-            <ion-card-content>Guess the consonant based on consonant you see below.</ion-card-content>
+            <ion-card-content>Guess the vowel based on sound you hear below.</ion-card-content>
           </ion-col>
         </ion-row>
         </ion-card>
-        <span style="font-family:DDC_Uchen;font-size: 30px;color:#95e52e;border: 1px solid #95e52e; border-radius: 100%;padding:0 10px 0px 10px">ང</span>
+        <ion-icon (click)="naro()" name="volume-high-outline" style="font-size: 30px;color:#95e52e;border: 1px solid #95e52e; border-radius: 100%;padding:8px"></ion-icon>
         <ion-list lines="none">
           <ion-radio-group [(ngModel)]="answer">
             <ion-card>
               <ion-item>
-
-                <ion-label style="  font-family: DDC_Uchen;">
-                  <ion-icon (click)="ah()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
-
-                </ion-label>
-                <ion-radio slot="start" value="ཨ" ></ion-radio>
+                <ion-label style="  font-family: DDC_Uchen;">ི</ion-label>
+                <ion-radio slot="start" value="ི" ></ion-radio>
               </ion-item>
             </ion-card><ion-card>
             <ion-item>
-
-              <ion-label style="  font-family: DDC_Uchen;">
-                <ion-icon (click)="nga()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
-              </ion-label>
-              <ion-radio slot="start" value="ང" ></ion-radio>
+              <ion-label style="  font-family: DDC_Uchen;">ུ</ion-label>
+              <ion-radio slot="start" value="ུ" ></ion-radio>
             </ion-item>
           </ion-card><ion-card>
             <ion-item>
-              <ion-label style="  font-family: DDC_Uchen;">
-                <ion-icon (click)="ka()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
-              </ion-label>
-              <ion-radio slot="start" value="ཀ" ></ion-radio>
+              <ion-label style="  font-family: DDC_Uchen;">ེ</ion-label>
+              <ion-radio slot="start" value="ེ" ></ion-radio>
             </ion-item>
           </ion-card><ion-card>
             <ion-item>
-              <ion-label style="  font-family: DDC_Uchen;">
-                <ion-icon (click)="ka()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
-              </ion-label>
-              <ion-radio slot="start" value="ཁ" ></ion-radio>
+              <ion-label style="  font-family: DDC_Uchen;">ོ</ion-label>
+              <ion-radio slot="start" value="ོ" ></ion-radio>
             </ion-item>
           </ion-card>
           </ion-radio-group>
         </ion-list>
         <ion-button (click)="goToSlide2()" shape="round">Confirm</ion-button>
+      </ion-grid>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: rgba(149,229,46,0.4)">
+          <ion-row>
+            <ion-col>
+              <ion-card-header style="font-weight: bold;font-size: 17px;font-family: DDC_Uchen">༤</ion-card-header>
+              <ion-card-content>འོག་ལུ་བཀལ་ཡོད་མི་དབྱངསའི་སྒྲ་ངོས་འཛིན་འབད།</ion-card-content>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+          <ion-col>
+            <ion-card-header style="font-weight: bold;font-size: 17px">Q4</ion-card-header>
+            <ion-card-content>Guess the vowel based on sound you hear below.</ion-card-content>
+          </ion-col>
+        </ion-row>
+        </ion-card>
+        <ion-icon (click)="geku()" name="volume-high-outline" style="font-size: 30px;color:#95e52e;border: 1px solid #95e52e; border-radius: 100%;padding:8px"></ion-icon>
+        <ion-list lines="none">
+          <ion-radio-group [(ngModel)]="answer">
+            <ion-card>
+              <ion-item>
+                <ion-label style="  font-family: DDC_Uchen;">ི</ion-label>
+                <ion-radio slot="start" value="ི" ></ion-radio>
+              </ion-item>
+            </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">ུ</ion-label>
+              <ion-radio slot="start" value="ུ" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">ེ</ion-label>
+              <ion-radio slot="start" value="ེ" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">ོ</ion-label>
+              <ion-radio slot="start" value="ོ" ></ion-radio>
+            </ion-item>
+          </ion-card>
+          </ion-radio-group>
+        </ion-list>
+        <ion-button (click)="goToSlide3()" shape="round">Confirm</ion-button>
+      </ion-grid>
+    </ion-slide>
+
+<ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: rgba(149,229,46,0.4)">
+          <ion-row>
+            <ion-col>
+              <ion-card-header style="font-weight: bold;font-size: 17px;font-family: DDC_Uchen">༥</ion-card-header>
+              <ion-card-content style="font-family: DDC_Uchen">འོག་ལུ་བཀལ་ཡོད་མི་གསལ་བྱེདའི་སྒྲ་ངོས་འཛིན་འབད།</ion-card-content>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+          <ion-col>
+            <ion-card-header style="font-weight: bold;font-size: 17px">Q5</ion-card-header>
+            <ion-card-content>Guess the consonant based on sound you hear below.</ion-card-content>
+          </ion-col>
+        </ion-row>
+        </ion-card>
+        <ion-icon (click)="btnRa()" name="volume-high-outline" style="font-size: 30px;color:#95e52e;border: 1px solid #95e52e; border-radius: 100%;padding:8px"></ion-icon>
+        <ion-list lines="none">
+          <ion-radio-group [(ngModel)]="answer">
+            <ion-card>
+              <ion-item>
+                <ion-label style="  font-family: DDC_Uchen;">ཐ</ion-label>
+                <ion-radio slot="start" value="ཐ" ></ion-radio>
+              </ion-item>
+            </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">ཏ</ion-label>
+              <ion-radio slot="start" value="ཏ" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">ར</ion-label>
+              <ion-radio slot="start" value="ར" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">ཀ</ion-label>
+              <ion-radio slot="start" value="ཀ" ></ion-radio>
+            </ion-item>
+          </ion-card>
+          </ion-radio-group>
+        </ion-list>
+        <ion-button (click)="goToSlide4()" shape="round">Confirm</ion-button>
+      </ion-grid>
+    </ion-slide>
+
+
+<ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: rgba(149,229,46,0.4)">
+          <ion-row>
+            <ion-col>
+              <ion-card-header style="font-weight: bold;font-size: 17px;font-family: DDC_Uchen">༦</ion-card-header>
+              <ion-card-content style="font-family: DDC_Uchen">འོག་ལུ་བཀལ་ཡོད་མི་གསལ་བྱེདའི་སྒྲ་ངོས་འཛིན་འབད།</ion-card-content>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+          <ion-col>
+            <ion-card-header style="font-weight: bold;font-size: 17px">Q6</ion-card-header>
+            <ion-card-content>Guess the consonant based on sound you hear below.</ion-card-content>
+          </ion-col>
+        </ion-row>
+        </ion-card>
+        <ion-icon (click)="btnNa()" name="volume-high-outline" style="font-size: 30px;color:#95e52e;border: 1px solid #95e52e; border-radius: 100%;padding:8px"></ion-icon>
+        <ion-list lines="none">
+          <ion-radio-group [(ngModel)]="answer">
+            <ion-card>
+              <ion-item>
+                <ion-label style="  font-family: DDC_Uchen;">ཕ</ion-label>
+                <ion-radio slot="start" value="ཐ" ></ion-radio>
+              </ion-item>
+            </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">ན</ion-label>
+              <ion-radio slot="start" value="ན" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">ར</ion-label>
+              <ion-radio slot="start" value="ར" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">མ</ion-label>
+              <ion-radio slot="start" value="ཀ" ></ion-radio>
+            </ion-item>
+          </ion-card>
+          </ion-radio-group>
+        </ion-list>
+        <ion-button (click)="goToSlide5()" shape="round">Confirm</ion-button>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: rgba(149,229,46,0.4)">
+          <ion-row>
+            <ion-col>
+              <ion-card-header style="font-weight: bold;font-size: 17px;font-family: DDC_Uchen">༦</ion-card-header>
+              <ion-card-content style="font-family: DDC_Uchen">འོག་ལུ་བཀལ་ཡོད་མི་གསལ་བྱེདའི་སྒྲ་ངོས་འཛིན་འབད།</ion-card-content>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+          <ion-col>
+            <ion-card-header style="font-weight: bold;font-size: 17px">Q6</ion-card-header>
+            <ion-card-content>Guess the consonant based on sound you hear below.</ion-card-content>
+          </ion-col>
+        </ion-row>
+        </ion-card>
+        <ion-icon (click)="btnNa()" name="volume-high-outline" style="font-size: 30px;color:#95e52e;border: 1px solid #95e52e; border-radius: 100%;padding:8px"></ion-icon>
+        <ion-list lines="none">
+          <ion-radio-group [(ngModel)]="answer">
+            <ion-card>
+              <ion-item>
+                <ion-label style="  font-family: DDC_Uchen;">ཕ</ion-label>
+                <ion-radio slot="start" value="ཐ" ></ion-radio>
+              </ion-item>
+            </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">ན</ion-label>
+              <ion-radio slot="start" value="ན" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">ར</ion-label>
+              <ion-radio slot="start" value="ར" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">མ</ion-label>
+              <ion-radio slot="start" value="ཀ" ></ion-radio>
+            </ion-item>
+          </ion-card>
+          </ion-radio-group>
+        </ion-list>
+        <ion-button (click)="goToSlide5()" shape="round">Confirm</ion-button>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: rgba(149,229,46,0.4)">
+          <ion-row>
+            <ion-col>
+              <ion-card-header style="font-weight: bold;font-size: 17px;font-family: DDC_Uchen">༦</ion-card-header>
+              <ion-card-content style="font-family: DDC_Uchen">འོག་ལུ་བཀལ་ཡོད་མི་གསལ་བྱེདའི་སྒྲ་ངོས་འཛིན་འབད།</ion-card-content>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+          <ion-col>
+            <ion-card-header style="font-weight: bold;font-size: 17px">Q6</ion-card-header>
+            <ion-card-content>Guess the consonant based on sound you hear below.</ion-card-content>
+          </ion-col>
+        </ion-row>
+        </ion-card>
+        <ion-icon (click)="btnNa()" name="volume-high-outline" style="font-size: 30px;color:#95e52e;border: 1px solid #95e52e; border-radius: 100%;padding:8px"></ion-icon>
+        <ion-list lines="none">
+          <ion-radio-group [(ngModel)]="answer">
+            <ion-card>
+              <ion-item>
+                <ion-label style="  font-family: DDC_Uchen;">ཕ</ion-label>
+                <ion-radio slot="start" value="ཐ" ></ion-radio>
+              </ion-item>
+            </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">ན</ion-label>
+              <ion-radio slot="start" value="ན" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">ར</ion-label>
+              <ion-radio slot="start" value="ར" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">མ</ion-label>
+              <ion-radio slot="start" value="ཀ" ></ion-radio>
+            </ion-item>
+          </ion-card>
+          </ion-radio-group>
+        </ion-list>
+        <ion-button (click)="goToSlide5()" shape="round">Confirm</ion-button>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: rgba(149,229,46,0.4)">
+          <ion-row>
+            <ion-col>
+              <ion-card-header style="font-weight: bold;font-size: 17px;font-family: DDC_Uchen">༦</ion-card-header>
+              <ion-card-content style="font-family: DDC_Uchen">འོག་ལུ་བཀལ་ཡོད་མི་གསལ་བྱེདའི་སྒྲ་ངོས་འཛིན་འབད།</ion-card-content>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+          <ion-col>
+            <ion-card-header style="font-weight: bold;font-size: 17px">Q6</ion-card-header>
+            <ion-card-content>Guess the consonant based on sound you hear below.</ion-card-content>
+          </ion-col>
+        </ion-row>
+        </ion-card>
+        <ion-icon (click)="btnNa()" name="volume-high-outline" style="font-size: 30px;color:#95e52e;border: 1px solid #95e52e; border-radius: 100%;padding:8px"></ion-icon>
+        <ion-list lines="none">
+          <ion-radio-group [(ngModel)]="answer">
+            <ion-card>
+              <ion-item>
+                <ion-label style="  font-family: DDC_Uchen;">ཕ</ion-label>
+                <ion-radio slot="start" value="ཐ" ></ion-radio>
+              </ion-item>
+            </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">ན</ion-label>
+              <ion-radio slot="start" value="ན" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">ར</ion-label>
+              <ion-radio slot="start" value="ར" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">མ</ion-label>
+              <ion-radio slot="start" value="ཀ" ></ion-radio>
+            </ion-item>
+          </ion-card>
+          </ion-radio-group>
+        </ion-list>
+        <ion-button (click)="goToSlide5()" shape="round">Confirm</ion-button>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: rgba(149,229,46,0.4)">
+          <ion-row>
+            <ion-col>
+              <ion-card-header style="font-weight: bold;font-size: 17px;font-family: DDC_Uchen">༦</ion-card-header>
+              <ion-card-content style="font-family: DDC_Uchen">འོག་ལུ་བཀལ་ཡོད་མི་གསལ་བྱེདའི་སྒྲ་ངོས་འཛིན་འབད།</ion-card-content>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+          <ion-col>
+            <ion-card-header style="font-weight: bold;font-size: 17px">Q6</ion-card-header>
+            <ion-card-content>Guess the consonant based on sound you hear below.</ion-card-content>
+          </ion-col>
+        </ion-row>
+        </ion-card>
+        <ion-icon (click)="btnNa()" name="volume-high-outline" style="font-size: 30px;color:#95e52e;border: 1px solid #95e52e; border-radius: 100%;padding:8px"></ion-icon>
+        <ion-list lines="none">
+          <ion-radio-group [(ngModel)]="answer">
+            <ion-card>
+              <ion-item>
+                <ion-label style="  font-family: DDC_Uchen;">ཕ</ion-label>
+                <ion-radio slot="start" value="ཐ" ></ion-radio>
+              </ion-item>
+            </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">ན</ion-label>
+              <ion-radio slot="start" value="ན" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">ར</ion-label>
+              <ion-radio slot="start" value="ར" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">མ</ion-label>
+              <ion-radio slot="start" value="ཀ" ></ion-radio>
+            </ion-item>
+          </ion-card>
+          </ion-radio-group>
+        </ion-list>
+        <ion-button (click)="goToSlide5()" shape="round">Confirm</ion-button>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: rgba(149,229,46,0.4)">
+          <ion-row>
+            <ion-col>
+              <ion-card-header style="font-weight: bold;font-size: 17px;font-family: DDC_Uchen">༦</ion-card-header>
+              <ion-card-content style="font-family: DDC_Uchen">འོག་ལུ་བཀལ་ཡོད་མི་གསལ་བྱེདའི་སྒྲ་ངོས་འཛིན་འབད།</ion-card-content>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+          <ion-col>
+            <ion-card-header style="font-weight: bold;font-size: 17px">Q6</ion-card-header>
+            <ion-card-content>Guess the consonant based on sound you hear below.</ion-card-content>
+          </ion-col>
+        </ion-row>
+        </ion-card>
+        <ion-icon (click)="btnNa()" name="volume-high-outline" style="font-size: 30px;color:#95e52e;border: 1px solid #95e52e; border-radius: 100%;padding:8px"></ion-icon>
+        <ion-list lines="none">
+          <ion-radio-group [(ngModel)]="answer">
+            <ion-card>
+              <ion-item>
+                <ion-label style="  font-family: DDC_Uchen;">ཕ</ion-label>
+                <ion-radio slot="start" value="ཐ" ></ion-radio>
+              </ion-item>
+            </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">ན</ion-label>
+              <ion-radio slot="start" value="ན" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">ར</ion-label>
+              <ion-radio slot="start" value="ར" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">མ</ion-label>
+              <ion-radio slot="start" value="ཀ" ></ion-radio>
+            </ion-item>
+          </ion-card>
+          </ion-radio-group>
+        </ion-list>
+        <ion-button (click)="goToSlide5()" shape="round">Confirm</ion-button>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: rgba(149,229,46,0.4)">
+          <ion-row>
+            <ion-col>
+              <ion-card-header style="font-weight: bold;font-size: 17px;font-family: DDC_Uchen">༦</ion-card-header>
+              <ion-card-content style="font-family: DDC_Uchen">འོག་ལུ་བཀལ་ཡོད་མི་གསལ་བྱེདའི་སྒྲ་ངོས་འཛིན་འབད།</ion-card-content>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+          <ion-col>
+            <ion-card-header style="font-weight: bold;font-size: 17px">Q6</ion-card-header>
+            <ion-card-content>Guess the consonant based on sound you hear below.</ion-card-content>
+          </ion-col>
+        </ion-row>
+        </ion-card>
+        <ion-icon (click)="btnNa()" name="volume-high-outline" style="font-size: 30px;color:#95e52e;border: 1px solid #95e52e; border-radius: 100%;padding:8px"></ion-icon>
+        <ion-list lines="none">
+          <ion-radio-group [(ngModel)]="answer">
+            <ion-card>
+              <ion-item>
+                <ion-label style="  font-family: DDC_Uchen;">ཕ</ion-label>
+                <ion-radio slot="start" value="ཐ" ></ion-radio>
+              </ion-item>
+            </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">ན</ion-label>
+              <ion-radio slot="start" value="ན" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">ར</ion-label>
+              <ion-radio slot="start" value="ར" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">མ</ion-label>
+              <ion-radio slot="start" value="ཀ" ></ion-radio>
+            </ion-item>
+          </ion-card>
+          </ion-radio-group>
+        </ion-list>
+        <ion-button (click)="goToSlide5()" shape="round">Confirm</ion-button>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: rgba(149,229,46,0.4)">
+          <ion-row>
+            <ion-col>
+              <ion-card-header style="font-weight: bold;font-size: 17px;font-family: DDC_Uchen">༦</ion-card-header>
+              <ion-card-content style="font-family: DDC_Uchen">འོག་ལུ་བཀལ་ཡོད་མི་གསལ་བྱེདའི་སྒྲ་ངོས་འཛིན་འབད།</ion-card-content>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+          <ion-col>
+            <ion-card-header style="font-weight: bold;font-size: 17px">Q6</ion-card-header>
+            <ion-card-content>Guess the consonant based on sound you hear below.</ion-card-content>
+          </ion-col>
+        </ion-row>
+        </ion-card>
+        <ion-icon (click)="btnNa()" name="volume-high-outline" style="font-size: 30px;color:#95e52e;border: 1px solid #95e52e; border-radius: 100%;padding:8px"></ion-icon>
+        <ion-list lines="none">
+          <ion-radio-group [(ngModel)]="answer">
+            <ion-card>
+              <ion-item>
+                <ion-label style="  font-family: DDC_Uchen;">ཕ</ion-label>
+                <ion-radio slot="start" value="ཐ" ></ion-radio>
+              </ion-item>
+            </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">ན</ion-label>
+              <ion-radio slot="start" value="ན" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">ར</ion-label>
+              <ion-radio slot="start" value="ར" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">མ</ion-label>
+              <ion-radio slot="start" value="ཀ" ></ion-radio>
+            </ion-item>
+          </ion-card>
+          </ion-radio-group>
+        </ion-list>
+        <ion-button (click)="goToSlide5()" shape="round">Confirm</ion-button>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: rgba(149,229,46,0.4)">
+          <ion-row>
+            <ion-col>
+              <ion-card-header style="font-weight: bold;font-size: 17px;font-family: DDC_Uchen">༦</ion-card-header>
+              <ion-card-content style="font-family: DDC_Uchen">འོག་ལུ་བཀལ་ཡོད་མི་གསལ་བྱེདའི་སྒྲ་ངོས་འཛིན་འབད།</ion-card-content>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+          <ion-col>
+            <ion-card-header style="font-weight: bold;font-size: 17px">Q6</ion-card-header>
+            <ion-card-content>Guess the consonant based on sound you hear below.</ion-card-content>
+          </ion-col>
+        </ion-row>
+        </ion-card>
+        <ion-icon (click)="btnNa()" name="volume-high-outline" style="font-size: 30px;color:#95e52e;border: 1px solid #95e52e; border-radius: 100%;padding:8px"></ion-icon>
+        <ion-list lines="none">
+          <ion-radio-group [(ngModel)]="answer">
+            <ion-card>
+              <ion-item>
+                <ion-label style="  font-family: DDC_Uchen;">ཕ</ion-label>
+                <ion-radio slot="start" value="ཐ" ></ion-radio>
+              </ion-item>
+            </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">ན</ion-label>
+              <ion-radio slot="start" value="ན" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">ར</ion-label>
+              <ion-radio slot="start" value="ར" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">མ</ion-label>
+              <ion-radio slot="start" value="ཀ" ></ion-radio>
+            </ion-item>
+          </ion-card>
+          </ion-radio-group>
+        </ion-list>
+        <ion-button (click)="goToSlide5()" shape="round">Confirm</ion-button>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: rgba(149,229,46,0.4)">
+          <ion-row>
+            <ion-col>
+              <ion-card-header style="font-weight: bold;font-size: 17px;font-family: DDC_Uchen">༦</ion-card-header>
+              <ion-card-content style="font-family: DDC_Uchen">འོག་ལུ་བཀལ་ཡོད་མི་གསལ་བྱེདའི་སྒྲ་ངོས་འཛིན་འབད།</ion-card-content>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+          <ion-col>
+            <ion-card-header style="font-weight: bold;font-size: 17px">Q6</ion-card-header>
+            <ion-card-content>Guess the consonant based on sound you hear below.</ion-card-content>
+          </ion-col>
+        </ion-row>
+        </ion-card>
+        <ion-icon (click)="btnNa()" name="volume-high-outline" style="font-size: 30px;color:#95e52e;border: 1px solid #95e52e; border-radius: 100%;padding:8px"></ion-icon>
+        <ion-list lines="none">
+          <ion-radio-group [(ngModel)]="answer">
+            <ion-card>
+              <ion-item>
+                <ion-label style="  font-family: DDC_Uchen;">ཕ</ion-label>
+                <ion-radio slot="start" value="ཐ" ></ion-radio>
+              </ion-item>
+            </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">ན</ion-label>
+              <ion-radio slot="start" value="ན" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">ར</ion-label>
+              <ion-radio slot="start" value="ར" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label style="  font-family: DDC_Uchen;">མ</ion-label>
+              <ion-radio slot="start" value="ཀ" ></ion-radio>
+            </ion-item>
+          </ion-card>
+          </ion-radio-group>
+        </ion-list>
+        <ion-button (click)="goToSlide5()" shape="round">Confirm</ion-button>
       </ion-grid>
     </ion-slide>
 

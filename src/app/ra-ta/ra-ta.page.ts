@@ -90,14 +90,6 @@ export class RaTaPage implements OnInit {
     });
     sound.play();
   }
-
-  sha() {
-    var sound = new Howl({
-      src: ['./assets/subscripts/sound/ra_tag/tha.mp3']
-    });
-    sound.play();
-  }
-
   sa() {
     var sound = new Howl({
       src: ['./assets/subscripts/sound/ra_tag/sa.mp3']
@@ -108,6 +100,14 @@ export class RaTaPage implements OnInit {
   ha() {
     var sound = new Howl({
       src: ['./assets/subscripts/sound/ra_tag/ha.mp3']
+    });
+    sound.play();
+  }
+
+  shah() {
+    var sound = new Howl({
+      src: ['./assets/Tenselo/missing sound/sha1.wav'],
+      volume:30
     });
     sound.play();
   }

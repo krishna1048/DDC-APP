@@ -117,6 +117,10 @@ const routes: Routes = [
     path: 'drinks',
     loadChildren: () => import('./drinks/drinks.module').then( m => m.DrinksPageModule)
   },
+  {
+    path: 'phonium',
+    loadChildren: () => import('./phonium/phonium.module').then( m => m.PhoniumPageModule)
+  },
 
 ];
 @NgModule({
