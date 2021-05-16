@@ -10,10 +10,10 @@ ion-slides{
   flex-direction: column;
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
+
 }
 ion-row{
   padding-bottom: 0;
 }
-ion-slides{
-  overflow-y: scroll;
-}
+
