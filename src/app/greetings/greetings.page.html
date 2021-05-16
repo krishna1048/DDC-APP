@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="color:dodgerblue;font-family: DDC_Uchen" size="medium">གཞི་རྟེན་བྱ་ཚིག།</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content>
+  <ion-slides pager="true">
+    <ion-slide>
+      <ion-grid>
+        <ion-card>
+          <ion-row>
+            <ion-col>
+            <p>སྐུ་གཟུགས་བཟང་པོ།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon (click)="greeting()" name="volume-high-outline" style="margin-top:15px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-card>
+          <ion-row>
+            <ion-col>
+            <p>བཀའ་དྲིན་ཆེ།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon (click)="thankyou()" name="volume-high-outline" style="margin-top:15px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+          <ion-row>
+            <ion-col>
+            <p>འབྱོན་པར་ལེགས་སོ།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon (click)="welcome()" name="volume-high-outline" style="margin-top:15px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card>
+          <ion-row>
+            <ion-col>
+            <p>བཀྲིས་བདེ་ལེགས།</p>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card>
+        <ion-icon (click)="wish()" name="volume-high-outline" style="margin-top:15px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+
+      </ion-grid>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
