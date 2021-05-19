@@ -1,4 +1,6 @@
-
+ion-slide{
+  overflow-y: scroll;
+}
 ion-col {
     display: flex;
     justify-content: center;
@@ -15,10 +17,10 @@ ion-slides{
 ion-row{
     padding-bottom: 0;
 }
-  
+
 img{
     width: auto;
     height: auto;
     margin: 0 0 10px 0;
-  
+
 }

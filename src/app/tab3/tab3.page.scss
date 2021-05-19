@@ -1,9 +1,15 @@
-ion-card-header p{
-  font-weight: bold;
-  color: dodgerblue;
-
-}
 ion-card{
-  font-family: DDC_Uchen;
-}
+  width: 100%;
+  height: auto;
+  margin: 0 0 10px 0;
 
+}
+ion-col{
+  display: flex;
+  text-align: center;
+}
+p{
+  color: black;
+  font-size: 18px;
+  font-family: 'DDC_Uchen';
+}

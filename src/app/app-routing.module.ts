@@ -118,6 +118,13 @@ const routes: Routes = [
     loadChildren: () => import('./drinks/drinks.module').then( m => m.DrinksPageModule)
   },
   {
+    path: 'phonium',
+    loadChildren: () => import('./phonium/phonium.module').then( m => m.PhoniumPageModule)
+  },  {
+    path: 'level-two',
+    loadChildren: () => import('./level-two/level-two.module').then( m => m.LevelTwoPageModule)
+  },
+  {
     path: 'honorific',
     loadChildren: () => import('./honorific/honorific.module').then( m => m.HonorificPageModule)
   },
@@ -129,6 +136,7 @@ const routes: Routes = [
     path: 'body-parts',
     loadChildren: () => import('./body-parts/body-parts.module').then( m => m.BodyPartsPageModule)
   },
+
 
 ];
 @NgModule({
