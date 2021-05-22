@@ -124,6 +124,14 @@ const routes: Routes = [
     path: 'level-two',
     loadChildren: () => import('./level-two/level-two.module').then( m => m.LevelTwoPageModule)
   },
+  {
+    path: 'level-three',
+    loadChildren: () => import('./level-three/level-three.module').then( m => m.LevelThreePageModule)
+  },
+  {
+    path: 'level-four',
+    loadChildren: () => import('./level-four/level-four.module').then( m => m.LevelFourPageModule)
+  },
 
 
 ];

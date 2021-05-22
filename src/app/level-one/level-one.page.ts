@@ -243,20 +243,6 @@ export class LevelOnePage implements OnInit {
       this.score = this.score + 1;
       this.myService.successMusic();
       console.log(String(this.score));
-      if (this.score>=0){
-        const alert = await this.alertController.create({
-          cssClass: 'my-custom-class',
-          header: '<img src="./assets/birds/image/blacked_n_crane.jpg">\n',
-          subHeader: 'Subtitle',
-          message: 'This is an alert message.',
-          buttons: ['OK', 'Next']
-        });
-
-        await alert.present();
-
-        const { role } = await alert.onDidDismiss();
-        console.log('onDidDismiss resolved with role', role);
-      }
     }
     else {
       console.log('False');
