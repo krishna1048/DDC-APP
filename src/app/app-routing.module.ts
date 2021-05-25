@@ -136,6 +136,126 @@ const routes: Routes = [
     path: 'body-parts',
     loadChildren: () => import('./body-parts/body-parts.module').then( m => m.BodyPartsPageModule)
   },
+  {
+    path: 'ka',
+    loadChildren: () => import('./ka/ka.module').then( m => m.KaPageModule)
+  },
+  {
+    path: 'kha',
+    loadChildren: () => import('./kha/kha.module').then( m => m.KhaPageModule)
+  },
+  {
+    path: 'ga',
+    loadChildren: () => import('./ga/ga.module').then( m => m.GaPageModule)
+  },
+  {
+    path: 'nga',
+    loadChildren: () => import('./nga/nga.module').then( m => m.NgaPageModule)
+  },
+  {
+    path: 'cha',
+    loadChildren: () => import('./cha/cha.module').then( m => m.ChaPageModule)
+  },
+  {
+    path: 'chha',
+    loadChildren: () => import('./chha/chha.module').then( m => m.ChhaPageModule)
+  },
+  {
+    path: 'ja',
+    loadChildren: () => import('./ja/ja.module').then( m => m.JaPageModule)
+  },
+  {
+    path: 'nya',
+    loadChildren: () => import('./nya/nya.module').then( m => m.NyaPageModule)
+  },
+  {
+    path: 'ta',
+    loadChildren: () => import('./ta/ta.module').then( m => m.TaPageModule)
+  },
+  {
+    path: 'tha',
+    loadChildren: () => import('./tha/tha.module').then( m => m.ThaPageModule)
+  },
+  {
+    path: 'dha',
+    loadChildren: () => import('./dha/dha.module').then( m => m.DhaPageModule)
+  },
+  {
+    path: 'na',
+    loadChildren: () => import('./na/na.module').then( m => m.NaPageModule)
+  },
+  {
+    path: 'pa',
+    loadChildren: () => import('./pa/pa.module').then( m => m.PaPageModule)
+  },
+  {
+    path: 'pha',
+    loadChildren: () => import('./pha/pha.module').then( m => m.PhaPageModule)
+  },
+  {
+    path: 'ba',
+    loadChildren: () => import('./ba/ba.module').then( m => m.BaPageModule)
+  },
+  {
+    path: 'ma',
+    loadChildren: () => import('./ma/ma.module').then( m => m.MaPageModule)
+  },
+  {
+    path: 'tsa',
+    loadChildren: () => import('./tsa/tsa.module').then( m => m.TsaPageModule)
+  },
+  {
+    path: 'tsha',
+    loadChildren: () => import('./tsha/tsha.module').then( m => m.TshaPageModule)
+  },
+  {
+    path: 'dza',
+    loadChildren: () => import('./dza/dza.module').then( m => m.DzaPageModule)
+  },
+  {
+    path: 'wa',
+    loadChildren: () => import('./wa/wa.module').then( m => m.WaPageModule)
+  },
+  {
+    path: 'zha',
+    loadChildren: () => import('./zha/zha.module').then( m => m.ZhaPageModule)
+  },
+  {
+    path: 'za',
+    loadChildren: () => import('./za/za.module').then( m => m.ZaPageModule)
+  },
+  {
+    path: 'yaah',
+    loadChildren: () => import('./yaah/yaah.module').then( m => m.YaahPageModule)
+  },
+  {
+    path: 'ya',
+    loadChildren: () => import('./ya/ya.module').then( m => m.YaPageModule)
+  },
+  {
+    path: 'ra',
+    loadChildren: () => import('./ra/ra.module').then( m => m.RaPageModule)
+  },
+  {
+    path: 'la',
+    loadChildren: () => import('./la/la.module').then( m => m.LaPageModule)
+  },
+  {
+    path: 'sha',
+    loadChildren: () => import('./sha/sha.module').then( m => m.ShaPageModule)
+  },
+  {
+    path: 'sa',
+    loadChildren: () => import('./sa/sa.module').then( m => m.SaPageModule)
+  },
+  {
+    path: 'ha',
+    loadChildren: () => import('./ha/ha.module').then( m => m.HaPageModule)
+  },
+  {
+    path: 'aah',
+    loadChildren: () => import('./aah/aah.module').then( m => m.AahPageModule)
+  },
 
 
 ];

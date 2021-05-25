@@ -27,7 +27,7 @@ export class FruitsPage implements OnInit {
   }
   cucumber() {
     var sound = new Howl({
-      src: ['./assets/Tenselo/missing sound/gain.wav'],
+      src: ['./assets/Tenselo/missing sound/cucumber.wav'],
       volume:30
     });
     sound.play();

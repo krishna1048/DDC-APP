@@ -1,128 +1,290 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button text="" defaultHref="/tabs/tab3"></ion-back-button>
-
+      <ion-back-button text="" defaultHref="/explore-container"></ion-back-button>
     </ion-buttons>
-    <ion-buttons slot="end">
-      <ion-button color="primary" expand="full" routerLink="/instructions">
-        <ion-icon name="information-circle" style="font-size: 25px"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-    <ion-title style="color:dodgerblue;font-family: DDC_Uchen" size="medium">
-      རྗོད་སྒྲ་རིག་པ།
-    </ion-title>
+    <ion-title style="color:dodgerblue;font-family: DDC_Uchen" size="medium">རྗོད་སྒྲ་རིག་པ།</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title style="color:dodgerblue;" size="medium" >Dzongkha Phonetics</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <br>
+<ion-content>
   <div id="container" style="position:relative">
-    <ion-slides>
-      <ion-slide>
-        <ion-grid>
-          <ion-card>
-            <ion-row>
-              <ion-col>
-                <img src="./assets/w_animals/image/barking_deer.jpg">
-              </ion-col>
+    
+    <ion-row>
+      <ion-col>
+        <ion-card routerLink="/ka">
 
-            </ion-row>
+          <ion-card-content>
+            <p >ཀ།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card routerLink="/kha">
 
-          </ion-card>
-          <span style="color:dodgerblue;font-family: DDC_Uchen;font-size: 35px;font-weight: bold">ཀ</span>
-          <ion-card>
-            <ion-row>
-              <ion-col>
-                <p>ཀ་ཤ།</p>
-              </ion-col>
+          <ion-card-content>
+            <p >ཁ།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card routerLink="/ga">
 
-            </ion-row>
-            <ion-icon  (click)="kasha()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+          <ion-card-content>
+            <p >ག།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
 
-          </ion-card>
-        </ion-grid>
-      </ion-slide>
+    <ion-row>
+      <ion-col>
+        <ion-card routerLink="/nga">
 
-      <ion-slide>
-        <ion-grid>
-          <ion-card>
-            <ion-row>
-              <ion-col>
-                <img src="./assets/phonetics_pics/chair.jpg">
-              </ion-col>
+          <ion-card-content>
+            <p >ང་།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card routerLink="/cha">
 
-            </ion-row>
+          <ion-card-content>
+            <p >ཅ།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card routerLink="/chha">
 
-          </ion-card>
-          <span style="color:dodgerblue;font-family: DDC_Uchen;font-size: 35px;font-weight: bold">ཀ</span>
-          <ion-card>
-            <ion-row>
-              <ion-col>
-                <p>རྐང་ཁྲི།</p>
-              </ion-col>
+          <ion-card-content>
+            <p >ཆ།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
 
-            </ion-row>
-            <ion-icon  (click)="chair()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+    <ion-row>
+      <ion-col>
+        <ion-card routerLink="/ja">
 
-          </ion-card>
-        </ion-grid>
-      </ion-slide>
+          <ion-card-content>
+            <p >ཇ།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card routerLink="/nya">
 
-      <ion-slide>
-        <ion-grid>
-          <ion-card>
-            <ion-row>
-              <ion-col>
-                <img src="./assets/vegetables/image/potato.jpg">
-              </ion-col>
+          <ion-card-content>
+            <p >ཉ།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card routerLink="/ta">
 
-            </ion-row>
+          <ion-card-content>
+            <p >ཏ།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      
+    </ion-row>
 
-          </ion-card>
-          <span style="color:dodgerblue;font-family: DDC_Uchen;font-size: 35px;font-weight: bold">ཀ</span>
-          <ion-card>
-            <ion-row>
-              <ion-col>
-                <p>ཀེ་བ།</p>
-              </ion-col>
+    <ion-row>
+      <ion-col>
+        <ion-card routerLink="/tha">
 
-            </ion-row>
-            <ion-icon  (click)="potato()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+          <ion-card-content>
+            <p >ཐ།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card routerLink="/dha">
 
-          </ion-card>
-        </ion-grid>
-      </ion-slide>
+          <ion-card-content>
+            <p >ད།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card routerLink="/na">
 
-      <ion-slide>
-        <ion-grid>
-          <ion-card>
-            <ion-row>
-              <ion-col>
-                <img src="./assets/phonetics_pics/lips.jpg">
-              </ion-col>
+          <ion-card-content>
+            <p >ན།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      
+    </ion-row>
+    
 
-            </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card routerLink="/pa">
 
-          </ion-card>
-          <span style="color:dodgerblue;font-family: DDC_Uchen;font-size: 35px;font-weight: bold">ཁ</span>
-          <ion-card>
-            <ion-row>
-              <ion-col>
-                <p>ཁ།</p>
-              </ion-col>
+          <ion-card-content>
+            <p >པ།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card routerLink="/pha">
 
-            </ion-row>
-            <ion-icon  (click)="lips()" name="volume-high-outline" style="margin-bottom:10px;font-size: 20px;color: dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:8px"></ion-icon>
+          <ion-card-content>
+            <p >ཕ།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card routerLink="/ba">
 
-          </ion-card>
-        </ion-grid>
-      </ion-slide>
-    </ion-slides>
+          <ion-card-content>
+            <p >བ།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-card routerLink="/ma">
+
+          <ion-card-content>
+            <p >མ།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card routerLink="/tsa">
+
+          <ion-card-content>
+            <p >ཙ།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card routerLink="/tsha">
+
+          <ion-card-content>
+            <p >ཚ།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-card routerLink="/dza">
+
+          <ion-card-content>
+            <p >ཛ།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card routerLink="/wa">
+
+          <ion-card-content>
+            <p >ཝ།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card routerLink="/zha">
+
+          <ion-card-content>
+            <p >ཞ།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      
+      <ion-col>
+        <ion-card routerLink="/za">
+
+          <ion-card-content>
+            <p >ཟ།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card routerLink="/yaah">
+
+          <ion-card-content>
+            <p >འ།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card routerLink="/ya">
+
+          <ion-card-content>
+            <p >ཡ།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-card routerLink="/ra">
+
+          <ion-card-content>
+            <p >ར།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card routerLink="/la">
+
+          <ion-card-content>
+            <p >ལ།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card routerLink="/sha">
+
+          <ion-card-content>
+            <p >ཤ།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      
+      <ion-col>
+        <ion-card routerLink="/sa">
+
+          <ion-card-content>
+            <p >ས།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card routerLink="/ha">
+
+          <ion-card-content>
+            <p >ཧ།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card routerLink="/aah">
+
+          <ion-card-content>
+            <p >ཨ།</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
   </div>
 </ion-content>
