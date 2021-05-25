@@ -27,6 +27,12 @@ export class ColoursPage implements OnInit {
     });
     sound.play();
   }
+  pink() {
+    var sound = new Howl({
+      src: ['./assets/colors/sound/pink.mp3']
+    });
+    sound.play();
+  }
 
   brown() {
     var sound = new Howl({

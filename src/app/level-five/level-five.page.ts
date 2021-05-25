@@ -6,12 +6,14 @@ import { ViewChild } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 
 import { IonSlides } from '@ionic/angular';
+
+
 @Component({
-  selector: 'app-level-two',
-  templateUrl: './level-two.page.html',
-  styleUrls: ['./level-two.page.scss'],
+  selector: 'app-level-five',
+  templateUrl: './level-five.page.html',
+  styleUrls: ['./level-five.page.scss'],
 })
-export class LevelTwoPage implements OnInit
+export class LevelFivePage implements OnInit
 {
   @ViewChild(IonSlides) slides: IonSlides;
   answer: any = {};
@@ -22,74 +24,71 @@ export class LevelTwoPage implements OnInit
 
   ngOnInit() {
   }
-  btnRa() {
+  potato() {
     var sound = new Howl({
-      src: ['./assets/numbers/sound/5.mp3']
+      src: ['./assets/vegetables/sound/potato.mp3']
     });
     sound.play();
   }
-  ka() {
+  carrot() {
     let sound = new Howl({
-      src: ['./assets/numbers/sound/9.mp3']
+      src: ['./assets/vegetables/sound/carrot.mp3']
     });
     sound.play();
   }
-
-  ah() {
+  ear() {
     let sound = new Howl({
-      src: ['./assets/numbers/sound/7.mp3']
+      src: ['./assets/fruits/sound/guava.mp3']
     });
     sound.play();
   }
-
-  nga() {
+  eye() {
     let sound = new Howl({
-      src: ['./assets/consonants/sound/nga.mp3']
+      src: ['./assets/fruits/sound/mango.mp3']
+    });
+    sound.play();
+  }
+  nose() {
+    let sound = new Howl({
+      src: ['./assets/fruits/sound/apple.mp3']
+    });
+    sound.play();
+  }
+  mouth() {
+    let sound = new Howl({
+      src: ['./assets/fruits/sound/lemon.mp3']
+    });
+    sound.play();
+  }
+  head() {
+    let sound = new Howl({
+      src: ['./assets/fruits/sound/orange.mp3']
+    });
+    sound.play();
+  }
+  chilli() {
+    let sound = new Howl({
+      src: ['./assets/vegetables/sound/chilli.mp3']
     });
     sound.play();
   }
 
-  naro() {
-    var sound = new Howl({
-      src: ['./assets/numbers/sound/0.mp3']
+  beans() {
+    let sound = new Howl({
+      src: ['./assets/vegetables/sound/beans.mp3']
     });
     sound.play();
   }
 
-  geku() {
+  cabbage() {
     var sound = new Howl({
-      src: ['./assets/numbers/sound/3.mp3']
+      src: ['./assets/vegetables/sound/cabbage.mp3']
     });
     sound.play();
   }
-  btnNa() {
+  broccoli() {
     var sound = new Howl({
-      src: ['./assets/subscripts/sound/ra_tag/ka.mp3']
-    });
-    sound.play();
-  }
-  btnTsa() {
-    var sound = new Howl({
-      src: ['./assets/Tenselo/missing sound/sha1.wav'],
-      volume:30
-    });
-    sound.play();
-  }
-  btnCha() {
-    var sound = new Howl({
-      src: ['./assets/subscripts/sound/la_tag/za.mp3']
-    });
-    sound.play();
-  }
-  btnTsha() {
-    var sound = new Howl({
-      src: ['./assets/subscripts/sound/wa_tag/ga.mp3']
-    });
-    sound.play();
-  }
-  btnZa() {
-    var sound = new Howl({
-      src: ['./assets/subscripts/sound/ya_tag/ba.mp3']
+      src: ['./assets/vegetables/sound/broccoli.mp3']
     });
     sound.play();
   }
@@ -242,7 +241,7 @@ export class LevelTwoPage implements OnInit
       this.score = this.score + 1;
       this.myService.successMusic();
       console.log(String(this.score));
-      }
+    }
     else {
       console.log('False');
       this.myService.failureMusic();

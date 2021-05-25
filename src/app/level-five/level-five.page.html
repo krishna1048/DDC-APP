@@ -1,0 +1,606 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="/tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-row>
+      <ion-col style="color: #bf7bad"></ion-col>
+      <ion-col style="background-color: #bf7bad;border-radius: 10px;color: white">
+        Level 5
+      </ion-col>
+      <ion-col style="color: #bf7bad">Score:<span style="font-weight: bold">{{score}}</span></ion-col>
+    </ion-row>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container" >
+    <ion-slides>
+      <ion-slide>
+        <ion-grid>
+          <ion-card style="background-color: rgba(191,123,173,0.4)">
+            <ion-row>
+              <ion-col>
+                <img src="./assets/fruits/image/guava.jpg">
+              </ion-col>
+            </ion-row>
+          </ion-card>
+          <ion-list lines="none">
+            <ion-radio-group [(ngModel)]="answer">
+              <ion-card>
+                <ion-item>
+                  <ion-label>
+                    <ion-fab>
+                      <ion-icon (click)="ear()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                      </ion-icon>
+                    </ion-fab>
+                  </ion-label>
+                  <ion-radio slot="start" value="ཀ" ></ion-radio>
+                </ion-item>
+              </ion-card>
+              <ion-card>
+                <ion-item>
+                  <ion-label>
+                    <ion-fab>
+                      <ion-icon (click)="nose()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                      </ion-icon>
+                    </ion-fab>
+                  </ion-label>
+                  <ion-radio slot="start" value="ུ" ></ion-radio>
+                </ion-item>
+              </ion-card><ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="mouth()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ར" ></ion-radio>
+              </ion-item>
+            </ion-card><ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="head()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ོ" ></ion-radio>
+              </ion-item>
+            </ion-card>
+            </ion-radio-group>
+          </ion-list>
+          <ion-button (click)="goToSlide()" shape="round">Confirm</ion-button>
+        </ion-grid>
+      </ion-slide>
+      <ion-slide>
+        <ion-grid>
+          <ion-card style="background-color: rgba(191,123,173,0.4)">
+            <ion-row>
+              <ion-col>
+                <img src="./assets/fruits/image/apple.jpg">
+              </ion-col>
+            </ion-row>
+          </ion-card>
+          <ion-list lines="none">
+            <ion-radio-group [(ngModel)]="answer">
+              <ion-card>
+                <ion-item>
+                  <ion-label>
+                    <ion-fab>
+                      <ion-icon (click)="ear()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                      </ion-icon>
+                    </ion-fab>
+                  </ion-label>
+                  <ion-radio slot="start" value="ན" ></ion-radio>
+                </ion-item>
+              </ion-card>
+              <ion-card>
+                <ion-item>
+                  <ion-label>
+                    <ion-fab>
+                      <ion-icon (click)="nose()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                      </ion-icon>
+                    </ion-fab>
+                  </ion-label>
+                  <ion-radio slot="start" value="ཨ" ></ion-radio>
+                </ion-item>
+              </ion-card><ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="mouth()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ར" ></ion-radio>
+              </ion-item>
+            </ion-card><ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="head()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ོ" ></ion-radio>
+              </ion-item>
+            </ion-card>
+            </ion-radio-group>
+          </ion-list>
+          <ion-button (click)="goToSlide1()" shape="round">Confirm</ion-button>
+        </ion-grid>
+      </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: rgba(191,123,173,0.4)">
+          <ion-row>
+            <ion-col>
+              <img src="./assets/fruits/image/mango.jpg">
+            </ion-col>
+          </ion-row>
+        </ion-card>
+        <ion-list lines="none">
+          <ion-radio-group [(ngModel)]="answer">
+            <ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="ear()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ན" ></ion-radio>
+              </ion-item>
+            </ion-card>
+            <ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="eye()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ོ" ></ion-radio>
+              </ion-item>
+            </ion-card><ion-card>
+            <ion-item>
+              <ion-label>
+                <ion-fab>
+                  <ion-icon (click)="mouth()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                  </ion-icon>
+                </ion-fab>
+              </ion-label>
+              <ion-radio slot="start" value="ར" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label>
+                <ion-fab>
+                  <ion-icon (click)="head()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+
+                  </ion-icon>
+                </ion-fab>
+              </ion-label>
+              <ion-radio slot="start" value="h" ></ion-radio>
+            </ion-item>
+          </ion-card>
+          </ion-radio-group>
+        </ion-list>
+        <ion-button (click)="goToSlide2()" shape="round">Confirm</ion-button>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: rgba(191,123,173,0.4)">
+          <ion-row>
+            <ion-col>
+              <img src="./assets/fruits/image/lemon.jpg">
+            </ion-col>
+          </ion-row>
+        </ion-card>
+        <ion-list lines="none">
+          <ion-radio-group [(ngModel)]="answer">
+            <ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="ear()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ན" ></ion-radio>
+              </ion-item>
+            </ion-card>
+            <ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="nose()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ཚ" ></ion-radio>
+              </ion-item>
+            </ion-card><ion-card>
+            <ion-item>
+              <ion-label>
+                <ion-fab>
+                  <ion-icon (click)="mouth()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                  </ion-icon>
+                </ion-fab>
+              </ion-label>
+              <ion-radio slot="start" value="ི" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label>
+                <ion-fab>
+                  <ion-icon (click)="head()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+
+                  </ion-icon>
+                </ion-fab>
+              </ion-label>
+              <ion-radio slot="start" value="ོ" ></ion-radio>
+            </ion-item>
+          </ion-card>
+          </ion-radio-group>
+        </ion-list>
+        <ion-button (click)="goToSlide3()" shape="round">Confirm</ion-button>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: rgba(191,123,173,0.4)">
+          <ion-row>
+            <ion-col>
+              <img src="./assets/fruits/image/orange.jpg">
+            </ion-col>
+          </ion-row>
+        </ion-card>
+        <ion-list lines="none">
+          <ion-radio-group [(ngModel)]="answer">
+            <ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="ear()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ན" ></ion-radio>
+              </ion-item>
+            </ion-card>
+            <ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="nose()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ུ" ></ion-radio>
+              </ion-item>
+            </ion-card><ion-card>
+            <ion-item>
+              <ion-label>
+                <ion-fab>
+                  <ion-icon (click)="mouth()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                  </ion-icon>
+                </ion-fab>
+              </ion-label>
+              <ion-radio slot="start" value="ཟ" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label>
+                <ion-fab>
+                  <ion-icon (click)="head()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+
+                  </ion-icon>
+                </ion-fab>
+              </ion-label>
+              <ion-radio slot="start" value="ར" ></ion-radio>
+            </ion-item>
+          </ion-card>
+          </ion-radio-group>
+        </ion-list>
+        <ion-button (click)="goToSlide4()" shape="round">Confirm</ion-button>
+      </ion-grid>
+    </ion-slide>
+      <ion-slide>
+        <ion-grid>
+          <ion-card style="background-color: rgba(191,123,173,0.4)">
+            <ion-row>
+              <ion-col>
+                <img src="./assets/vegetables/image/potato.jpg">
+              </ion-col>
+            </ion-row>
+          </ion-card>
+          <ion-list lines="none">
+            <ion-radio-group [(ngModel)]="answer">
+              <ion-card>
+                <ion-item>
+                  <ion-label>
+                    <ion-fab>
+                      <ion-icon (click)="cabbage()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                      </ion-icon>
+                    </ion-fab>
+                  </ion-label>
+                  <ion-radio slot="start" value="ཀ" ></ion-radio>
+                </ion-item>
+              </ion-card>
+              <ion-card>
+                <ion-item>
+                  <ion-label>
+                    <ion-fab>
+                      <ion-icon (click)="carrot()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                      </ion-icon>
+                    </ion-fab>
+                  </ion-label>
+                  <ion-radio slot="start" value="ུ" ></ion-radio>
+                </ion-item>
+              </ion-card><ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="potato()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ན" ></ion-radio>
+              </ion-item>
+            </ion-card><ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="beans()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ོ" ></ion-radio>
+              </ion-item>
+            </ion-card>
+            </ion-radio-group>
+          </ion-list>
+          <ion-button (click)="goToSlide5()" shape="round">Confirm</ion-button>
+        </ion-grid>
+      </ion-slide>
+      <ion-slide>
+        <ion-grid>
+          <ion-card style="background-color: rgba(191,123,173,0.4)">
+            <ion-row>
+              <ion-col>
+                <img src="./assets/vegetables/image/beans.jpg">
+              </ion-col>
+            </ion-row>
+          </ion-card>
+          <ion-list lines="none">
+            <ion-radio-group [(ngModel)]="answer">
+              <ion-card>
+                <ion-item>
+                  <ion-label>
+                    <ion-fab>
+                      <ion-icon (click)="beans()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                      </ion-icon>
+                    </ion-fab>
+                  </ion-label>
+                  <ion-radio slot="start" value="ས" ></ion-radio>
+                </ion-item>
+              </ion-card>
+              <ion-card>
+                <ion-item>
+                  <ion-label>
+                    <ion-fab>
+                      <ion-icon (click)="carrot()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                      </ion-icon>
+                    </ion-fab>
+                  </ion-label>
+                  <ion-radio slot="start" value="ཨ" ></ion-radio>
+                </ion-item>
+              </ion-card><ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="chilli()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ར" ></ion-radio>
+              </ion-item>
+            </ion-card><ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="potato()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ོ" ></ion-radio>
+              </ion-item>
+            </ion-card>
+            </ion-radio-group>
+          </ion-list>
+          <ion-button (click)="goToSlide6()" shape="round">Confirm</ion-button>
+        </ion-grid>
+      </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: rgba(191,123,173,0.4)">
+          <ion-row>
+            <ion-col>
+              <img src="./assets/vegetables/image/cabbage.jpg">
+            </ion-col>
+          </ion-row>
+        </ion-card>
+        <ion-list lines="none">
+          <ion-radio-group [(ngModel)]="answer">
+            <ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="potato()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ན" ></ion-radio>
+              </ion-item>
+            </ion-card>
+            <ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="cabbage()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ཆ" ></ion-radio>
+              </ion-item>
+            </ion-card><ion-card>
+            <ion-item>
+              <ion-label>
+                <ion-fab>
+                  <ion-icon (click)="carrot()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                  </ion-icon>
+                </ion-fab>
+              </ion-label>
+              <ion-radio slot="start" value="ར" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label>
+                <ion-fab>
+                  <ion-icon (click)="chilli()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+
+                  </ion-icon>
+                </ion-fab>
+              </ion-label>
+              <ion-radio slot="start" value="h" ></ion-radio>
+            </ion-item>
+          </ion-card>
+          </ion-radio-group>
+        </ion-list>
+        <ion-button (click)="goToSlide7()" shape="round">Confirm</ion-button>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: rgba(191,123,173,0.4)">
+          <ion-row>
+            <ion-col>
+              <img src="./assets/vegetables/image/chilli.jpg">
+            </ion-col>
+          </ion-row>
+        </ion-card>
+        <ion-list lines="none">
+          <ion-radio-group [(ngModel)]="answer">
+            <ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="chilli()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ཚ" ></ion-radio>
+              </ion-item>
+            </ion-card>
+            <ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="potato()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="y" ></ion-radio>
+              </ion-item>
+            </ion-card><ion-card>
+            <ion-item>
+              <ion-label>
+                <ion-fab>
+                  <ion-icon (click)="carrot()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                  </ion-icon>
+                </ion-fab>
+              </ion-label>
+              <ion-radio slot="start" value="ི" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label>
+                <ion-fab>
+                  <ion-icon (click)="broccoli()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+
+                  </ion-icon>
+                </ion-fab>
+              </ion-label>
+              <ion-radio slot="start" value="ོ" ></ion-radio>
+            </ion-item>
+          </ion-card>
+          </ion-radio-group>
+        </ion-list>
+        <ion-button (click)="goToSlide8()" shape="round">Confirm</ion-button>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: rgba(191,123,173,0.4)">
+          <ion-row>
+            <ion-col>
+              <img src="./assets/vegetables/image/carrot.jpg">
+            </ion-col>
+          </ion-row>
+        </ion-card>
+        <ion-list lines="none">
+          <ion-radio-group [(ngModel)]="answer">
+            <ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="broccoli()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ན" ></ion-radio>
+              </ion-item>
+            </ion-card>
+            <ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="potato()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ུ" ></ion-radio>
+              </ion-item>
+            </ion-card><ion-card>
+            <ion-item>
+              <ion-label>
+                <ion-fab>
+                  <ion-icon (click)="carrot()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                  </ion-icon>
+                </ion-fab>
+              </ion-label>
+              <ion-radio slot="start" value="ཟ" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label>
+                <ion-fab>
+                  <ion-icon (click)="chilli()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+
+                  </ion-icon>
+                </ion-fab>
+              </ion-label>
+              <ion-radio slot="start" value="ར" ></ion-radio>
+            </ion-item>
+          </ion-card>
+          </ion-radio-group>
+        </ion-list>
+        <ion-button (click)="goToSlide9()" shape="round">Finish</ion-button>
+      </ion-grid>
+    </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>

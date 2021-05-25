@@ -120,7 +120,8 @@ const routes: Routes = [
   {
     path: 'phonium',
     loadChildren: () => import('./phonium/phonium.module').then( m => m.PhoniumPageModule)
-  },  {
+  },
+  {
     path: 'level-two',
     loadChildren: () => import('./level-two/level-two.module').then( m => m.LevelTwoPageModule)
   },

@@ -1,0 +1,562 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="/tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-row>
+      <ion-col style="color: #bf7bad"></ion-col>
+      <ion-col style="background-color: #bf7bad;border-radius: 10px;color: white">
+        Level 4
+      </ion-col>
+      <ion-col style="color: #bf7bad">Score:<span style="font-weight: bold">{{score}}</span></ion-col>
+    </ion-row>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container" >
+    <ion-slides>
+      <ion-slide>
+        <ion-grid>
+          <ion-card style="background-color:rgba(191,123,173,0.4)">
+            <ion-row>
+              <ion-col>
+                <ion-card-header style="font-weight: bold;font-size: 17px;font-family: DDC_Uchen">༡</ion-card-header>
+                <ion-card-content style="font-family: DDC_Uchen">འོག་ལུ་བཀལ་ཡོད་མི་ཚོས་གཞི་ངོས་འཛིན་འབད།</ion-card-content>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-card-header style="font-weight: bold;font-size: 17px">Q1</ion-card-header>
+                <ion-card-content>Guess the colour based on sound you hear below. </ion-card-content>
+              </ion-col>
+            </ion-row>
+          </ion-card>
+          <ion-icon (click)="ka()" name="volume-high-outline" style="font-size: 30px;color:#bf7bad;border: 1px solid #bf7bad; border-radius: 100%;padding:8px"></ion-icon>
+
+          <ion-list lines="none">
+            <ion-radio-group [(ngModel)]="answer">
+              <ion-card style="--ion-background-color: red">
+                <ion-item >
+                  <ion-label style="  font-family: DDC_Uchen;font-size: 20px;color: white">དམརཔོ</ion-label>
+                  <ion-radio slot="start" value="ག" ></ion-radio>
+                </ion-item>
+              </ion-card>
+              <ion-card style="--ion-background-color: blue">
+              <ion-item>
+                <ion-label style="  font-family: DDC_Uchen;font-size: 20px;color: white">ཧོནམོ</ion-label>
+                <ion-radio slot="start" value="ཀ" ></ion-radio>
+              </ion-item>
+            </ion-card>
+              <ion-card style="--ion-background-color: orange">
+              <ion-item>
+                <ion-label style="  font-family: DDC_Uchen;font-size: 20px;color: white">ལི་ཝང</ion-label>
+                <ion-radio slot="start" value="ཏ" ></ion-radio>
+              </ion-item>
+            </ion-card>
+              <ion-card style="--ion-background-color: yellow">
+              <ion-item>
+                <ion-label style="  font-family: DDC_Uchen;font-size: 20px;">སེརཔོ</ion-label>
+                <ion-radio slot="start" value="ལ" ></ion-radio>
+              </ion-item>
+            </ion-card>
+            </ion-radio-group>
+          </ion-list>
+          <ion-button (click)="goToSlide()" shape="round">Confirm</ion-button>
+        </ion-grid>
+      </ion-slide>
+      <ion-slide>
+        <ion-grid>
+          <ion-card style="background-color: rgba(191,123,173,0.4)">
+            <ion-row>
+              <ion-col>
+                <ion-card-header style="font-weight: bold;font-size: 17px;font-family: DDC_Uchen">༢</ion-card-header>
+                <ion-card-content style="font-family: DDC_Uchen">འོག་ལུ་བཀལ་ཡོད་མི་ཚོས་གཞི་ངོས་འཛིན་འབད།</ion-card-content>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-card-header style="font-weight: bold;font-size: 17px">Q2</ion-card-header>
+                <ion-card-content>Guess the colour based on sound you hear below. </ion-card-content>
+              </ion-col>
+            </ion-row>
+          </ion-card>
+          <ion-icon (click)="ah()" name="volume-high-outline" style="font-size: 30px;color:#bf7bad;border: 1px solid #bf7bad; border-radius: 100%;padding:8px"></ion-icon>
+          <ion-list lines="none">
+            <ion-radio-group [(ngModel)]="answer">
+              <ion-card>
+                <ion-item >
+                  <ion-label style="  font-family: DDC_Uchen;font-size: 20px;">དཀརཔོ</ion-label>
+                  <ion-radio slot="start" value="ཨ" ></ion-radio>
+                </ion-item>
+              </ion-card>
+              <ion-card style="--ion-background-color: #6a2203">
+                <ion-item>
+                  <ion-label style="  font-family: DDC_Uchen;font-size: 20px;color: white">སྨུགཔོ</ion-label>
+                  <ion-radio slot="start" value="ཏ" ></ion-radio>
+                </ion-item>
+              </ion-card>
+              <ion-card style="--ion-background-color: yellow">
+                <ion-item>
+                  <ion-label style="  font-family: DDC_Uchen;font-size: 20px;">སེརཔོ</ion-label>
+                  <ion-radio slot="start" value="ལ" ></ion-radio>
+                </ion-item>
+              </ion-card>
+              <ion-card style="--ion-background-color: blue">
+                <ion-item>
+                  <ion-label style="  font-family: DDC_Uchen;font-size: 20px;color: white">ཧོནམོ</ion-label>
+                  <ion-radio slot="start" value="ཀ" ></ion-radio>
+                </ion-item>
+              </ion-card>
+
+
+            </ion-radio-group>
+          </ion-list>
+          <ion-button (click)="goToSlide1()" shape="round">Confirm</ion-button>
+        </ion-grid>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-grid>
+          <ion-card style="background-color: rgba(191,123,173,0.4)">
+            <ion-row>
+              <ion-col>
+                <ion-card-header style="font-weight: bold;font-size: 17px;font-family: DDC_Uchen">༣</ion-card-header>
+                <ion-card-content style="font-family: DDC_Uchen">འོག་ལུ་བཀལ་ཡོད་མི་ཚོས་གཞི་ངོས་འཛིན་འབད།</ion-card-content>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-card-header style="font-weight: bold;font-size: 17px">Q3</ion-card-header>
+                <ion-card-content>Guess the colour based on sound you hear below. </ion-card-content>
+              </ion-col>
+            </ion-row>
+          </ion-card>
+          <ion-icon (click)="naro()" name="volume-high-outline" style="font-size: 30px;color:#bf7bad;border: 1px solid #bf7bad; border-radius: 100%;padding:8px"></ion-icon>
+          <ion-list lines="none">
+            <ion-radio-group [(ngModel)]="answer">
+              <ion-card style="--ion-background-color: green">
+                <ion-item >
+                  <ion-label style="  font-family: DDC_Uchen;font-size: 20px;color: white">ལྕང་ཁ</ion-label>
+                  <ion-radio slot="start" value="ཨ" ></ion-radio>
+                </ion-item>
+              </ion-card>
+              <ion-card style="--ion-background-color: #6a2203">
+                <ion-item>
+                  <ion-label style="  font-family: DDC_Uchen;font-size: 20px;color: white">སྨུགཔོ</ion-label>
+                  <ion-radio slot="start" value="ཏ" ></ion-radio>
+                </ion-item>
+              </ion-card>
+              <ion-card style="--ion-background-color: yellow">
+                <ion-item>
+                  <ion-label style="  font-family: DDC_Uchen;font-size: 20px;">སེརཔོ</ion-label>
+                  <ion-radio slot="start" value="ོ" ></ion-radio>
+                </ion-item>
+              </ion-card>
+              <ion-card style="--ion-background-color: blue">
+                <ion-item>
+                  <ion-label style="  font-family: DDC_Uchen;font-size: 20px;color: white">ཧོནམོ</ion-label>
+                  <ion-radio slot="start" value="ཀ" ></ion-radio>
+                </ion-item>
+              </ion-card>
+            </ion-radio-group>
+          </ion-list>
+          <ion-button (click)="goToSlide2()" shape="round">Confirm</ion-button>
+        </ion-grid>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-grid>
+          <ion-card style="background-color: rgba(191,123,173,0.4)">
+            <ion-row>
+              <ion-col>
+                <ion-card-header style="font-weight: bold;font-size: 17px;font-family: DDC_Uchen">༤</ion-card-header>
+                <ion-card-content style="font-family: DDC_Uchen">འོག་ལུ་བཀལ་ཡོད་མི་ཚོས་གཞི་ངོས་འཛིན་འབད།</ion-card-content>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-card-header style="font-weight: bold;font-size: 17px">Q4</ion-card-header>
+                <ion-card-content>Guess the colour based on sound you hear below. </ion-card-content>
+              </ion-col>
+            </ion-row>
+          </ion-card>
+          <ion-icon (click)="geku()" name="volume-high-outline" style="font-size: 30px;color:#bf7bad;border: 1px solid #bf7bad; border-radius: 100%;padding:8px"></ion-icon>
+          <ion-list lines="none">
+            <ion-radio-group [(ngModel)]="answer">
+              <ion-card style="--ion-background-color: red">
+                <ion-item >
+                  <ion-label style="  font-family: DDC_Uchen;font-size: 20px;color: white">དམརཔོ</ion-label>
+                  <ion-radio slot="start" value="ག" ></ion-radio>
+                </ion-item>
+              </ion-card>
+              <ion-card style="--ion-background-color: deeppink">
+                <ion-item>
+                  <ion-label style="  font-family: DDC_Uchen;font-size: 20px;color: white">ཤ་ཁ</ion-label>
+                  <ion-radio slot="start" value="ི" ></ion-radio>
+                </ion-item>
+              </ion-card>
+              <ion-card style="--ion-background-color: orange">
+                <ion-item>
+                  <ion-label style="  font-family: DDC_Uchen;font-size: 20px;color: white">ལི་ཝང</ion-label>
+                  <ion-radio slot="start" value="ཏ" ></ion-radio>
+                </ion-item>
+              </ion-card>
+              <ion-card style="--ion-background-color: yellow">
+                <ion-item>
+                  <ion-label style="  font-family: DDC_Uchen;font-size: 20px;">སེརཔོ</ion-label>
+                  <ion-radio slot="start" value="ལ" ></ion-radio>
+                </ion-item>
+              </ion-card>
+            </ion-radio-group>
+          </ion-list>
+          <ion-button (click)="goToSlide3()" shape="round">Confirm</ion-button>
+        </ion-grid>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-grid>
+          <ion-card style="background-color: rgba(191,123,173,0.4)">
+            <ion-row>
+              <ion-col>
+                <ion-card-header style="font-weight: bold;font-size: 17px;font-family: DDC_Uchen">༥</ion-card-header>
+                <ion-card-content style="font-family: DDC_Uchen">འོག་ལུ་བཀལ་ཡོད་མི་ཚོས་གཞི་ངོས་འཛིན་འབད།</ion-card-content>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-card-header style="font-weight: bold;font-size: 17px">Q5</ion-card-header>
+                <ion-card-content>Guess the colour based on sound you hear below. </ion-card-content>
+              </ion-col>
+            </ion-row>
+          </ion-card>
+          <ion-icon (click)="btnRa()" name="volume-high-outline" style="font-size: 30px;color:#bf7bad;border: 1px solid #bf7bad; border-radius: 100%;padding:8px"></ion-icon>
+          <ion-list lines="none">
+            <ion-radio-group [(ngModel)]="answer">
+              <ion-card style="--ion-background-color: red">
+                <ion-item >
+                  <ion-label style="  font-family: DDC_Uchen;font-size: 20px;color: white">དམརཔོ</ion-label>
+                  <ion-radio slot="start" value="ག" ></ion-radio>
+                </ion-item>
+              </ion-card>
+              <ion-card style="--ion-background-color: deeppink">
+                <ion-item>
+                  <ion-label style="  font-family: DDC_Uchen;font-size: 20px;color: white">ཤ་ཁ</ion-label>
+                  <ion-radio slot="start" value="ི" ></ion-radio>
+                </ion-item>
+              </ion-card>
+              <ion-card style="--ion-background-color: black">
+                <ion-item>
+                  <ion-label style="  font-family: DDC_Uchen;font-size: 20px;color: white">དནགཔོ</ion-label>
+                  <ion-radio slot="start" value="ར" ></ion-radio>
+                </ion-item>
+              </ion-card>
+              <ion-card style="--ion-background-color: yellow">
+                <ion-item>
+                  <ion-label style="  font-family: DDC_Uchen;font-size: 20px;">སེརཔོ</ion-label>
+                  <ion-radio slot="start" value="ལ" ></ion-radio>
+                </ion-item>
+              </ion-card>
+            </ion-radio-group>
+          </ion-list>
+          <ion-button (click)="goToSlide4()" shape="round">Confirm</ion-button>
+        </ion-grid>
+      </ion-slide>
+
+
+      <ion-slide>
+        <ion-grid>
+          <ion-card style="background-color: rgba(191,123,173,0.4)">
+            <ion-row>
+              <ion-col>
+                <img src="./assets/body_parts/image/ear.jpg">
+              </ion-col>
+            </ion-row>
+          </ion-card>
+          <ion-list lines="none">
+            <ion-radio-group [(ngModel)]="answer">
+              <ion-card>
+                <ion-item>
+                  <ion-label>
+                    <ion-fab>
+                        <ion-icon (click)="ear()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                        </ion-icon>
+                    </ion-fab>
+                  </ion-label>
+                  <ion-radio slot="start" value="ན" ></ion-radio>
+                </ion-item>
+              </ion-card>
+              <ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="nose()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ུ" ></ion-radio>
+              </ion-item>
+            </ion-card><ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="mouth()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ར" ></ion-radio>
+              </ion-item>
+            </ion-card><ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="head()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ོ" ></ion-radio>
+              </ion-item>
+            </ion-card>
+            </ion-radio-group>
+          </ion-list>
+          <ion-button (click)="goToSlide5()" shape="round">Confirm</ion-button>
+        </ion-grid>
+      </ion-slide>
+      <ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: rgba(191,123,173,0.4)">
+          <ion-row>
+            <ion-col>
+              <img src="./assets/body_parts/image/nose.jpg">
+            </ion-col>
+          </ion-row>
+        </ion-card>
+        <ion-list lines="none">
+          <ion-radio-group [(ngModel)]="answer">
+            <ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="ear()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ན" ></ion-radio>
+              </ion-item>
+            </ion-card>
+            <ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="nose()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ས" ></ion-radio>
+              </ion-item>
+            </ion-card><ion-card>
+            <ion-item>
+              <ion-label>
+                <ion-fab>
+                  <ion-icon (click)="mouth()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                  </ion-icon>
+                </ion-fab>
+              </ion-label>
+              <ion-radio slot="start" value="ར" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label>
+                <ion-fab>
+                  <ion-icon (click)="head()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+
+                  </ion-icon>
+                </ion-fab>
+              </ion-label>
+              <ion-radio slot="start" value="ོ" ></ion-radio>
+            </ion-item>
+          </ion-card>
+          </ion-radio-group>
+        </ion-list>
+        <ion-button (click)="goToSlide6()" shape="round">Confirm</ion-button>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: rgba(191,123,173,0.4)">
+          <ion-row>
+            <ion-col>
+              <img src="./assets/body_parts/image/eye.jpg">
+            </ion-col>
+          </ion-row>
+        </ion-card>
+        <ion-list lines="none">
+          <ion-radio-group [(ngModel)]="answer">
+            <ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="ear()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ན" ></ion-radio>
+              </ion-item>
+            </ion-card>
+            <ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="eye()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ཆ" ></ion-radio>
+              </ion-item>
+            </ion-card><ion-card>
+            <ion-item>
+              <ion-label>
+                <ion-fab>
+                  <ion-icon (click)="mouth()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                  </ion-icon>
+                </ion-fab>
+              </ion-label>
+              <ion-radio slot="start" value="ར" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label>
+                <ion-fab>
+                  <ion-icon (click)="head()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+
+                  </ion-icon>
+                </ion-fab>
+              </ion-label>
+              <ion-radio slot="start" value="ོ" ></ion-radio>
+            </ion-item>
+          </ion-card>
+          </ion-radio-group>
+        </ion-list>
+        <ion-button (click)="goToSlide7()" shape="round">Confirm</ion-button>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: rgba(191,123,173,0.4)">
+          <ion-row>
+            <ion-col>
+              <img src="./assets/body_parts/image/nose.jpg">
+            </ion-col>
+          </ion-row>
+        </ion-card>
+        <ion-list lines="none">
+          <ion-radio-group [(ngModel)]="answer">
+            <ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="ear()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ན" ></ion-radio>
+              </ion-item>
+            </ion-card>
+            <ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="nose()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ཚ" ></ion-radio>
+              </ion-item>
+            </ion-card><ion-card>
+            <ion-item>
+              <ion-label>
+                <ion-fab>
+                  <ion-icon (click)="mouth()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                  </ion-icon>
+                </ion-fab>
+              </ion-label>
+              <ion-radio slot="start" value="ར" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label>
+                <ion-fab>
+                  <ion-icon (click)="head()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+
+                  </ion-icon>
+                </ion-fab>
+              </ion-label>
+              <ion-radio slot="start" value="ོ" ></ion-radio>
+            </ion-item>
+          </ion-card>
+          </ion-radio-group>
+        </ion-list>
+        <ion-button (click)="goToSlide8()" shape="round">Confirm</ion-button>
+      </ion-grid>
+    </ion-slide><ion-slide>
+      <ion-grid>
+        <ion-card style="background-color: rgba(191,123,173,0.4)">
+          <ion-row>
+            <ion-col>
+              <img src="./assets/body_parts/image/mouth.jpg">
+            </ion-col>
+          </ion-row>
+        </ion-card>
+        <ion-list lines="none">
+          <ion-radio-group [(ngModel)]="answer">
+            <ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="ear()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ན" ></ion-radio>
+              </ion-item>
+            </ion-card>
+            <ion-card>
+              <ion-item>
+                <ion-label>
+                  <ion-fab>
+                    <ion-icon (click)="nose()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                    </ion-icon>
+                  </ion-fab>
+                </ion-label>
+                <ion-radio slot="start" value="ུ" ></ion-radio>
+              </ion-item>
+            </ion-card><ion-card>
+            <ion-item>
+              <ion-label>
+                <ion-fab>
+                  <ion-icon (click)="mouth()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+                  </ion-icon>
+                </ion-fab>
+              </ion-label>
+              <ion-radio slot="start" value="ཟ" ></ion-radio>
+            </ion-item>
+          </ion-card><ion-card>
+            <ion-item>
+              <ion-label>
+                <ion-fab>
+                  <ion-icon (click)="head()" name="volume-high-outline" style="font-size: 15px;color:dodgerblue;border: 1px solid dodgerblue; border-radius: 100%;padding:4px">
+
+                  </ion-icon>
+                </ion-fab>
+              </ion-label>
+              <ion-radio slot="start" value="ོ" ></ion-radio>
+            </ion-item>
+          </ion-card>
+          </ion-radio-group>
+        </ion-list>
+        <ion-button (click)="goToSlide9()" shape="round">Finish</ion-button>
+      </ion-grid>
+    </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>
