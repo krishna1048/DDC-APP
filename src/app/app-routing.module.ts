@@ -132,6 +132,30 @@ const routes: Routes = [
     path: 'level-four',
     loadChildren: () => import('./level-four/level-four.module').then( m => m.LevelFourPageModule)
   },
+  {
+    path: 'level-five',
+    loadChildren: () => import('./level-five/level-five.module').then( m => m.LevelFivePageModule)
+  },
+  {
+    path: 'level-six',
+    loadChildren: () => import('./level-six/level-six.module').then( m => m.LevelSixPageModule)
+  },
+  {
+    path: 'level-seven',
+    loadChildren: () => import('./level-seven/level-seven.module').then( m => m.LevelSevenPageModule)
+  },
+  {
+    path: 'level-eight',
+    loadChildren: () => import('./level-eight/level-eight.module').then( m => m.LevelEightPageModule)
+  },
+  {
+    path: 'level-nine',
+    loadChildren: () => import('./level-nine/level-nine.module').then( m => m.LevelNinePageModule)
+  },
+  {
+    path: 'level-ten',
+    loadChildren: () => import('./level-ten/level-ten.module').then( m => m.LevelTenPageModule)
+  },
 
 
 ];

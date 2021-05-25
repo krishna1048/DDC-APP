@@ -1,0 +1,32 @@
+ion-col{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+ion-slides{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+ion-slide{
+  overflow-y: scroll;
+  display: block;
+}
+ion-row{
+  padding-bottom: 0;
+}
+ion-card-content{
+  font-size: 17px;
+  font-family: DDC_Uchen  ;
+}
+
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}

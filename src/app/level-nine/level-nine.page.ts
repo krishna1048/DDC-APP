@@ -9,11 +9,11 @@ import { IonSlides } from '@ionic/angular';
 
 
 @Component({
-  selector: 'app-level-four',
-  templateUrl: './level-four.page.html',
-  styleUrls: ['./level-four.page.scss'],
+  selector: 'app-level-nine',
+  templateUrl: './level-nine.page.html',
+  styleUrls: ['./level-nine.page.scss'],
 })
-export class LevelFourPage implements OnInit
+export class LevelNinePage implements OnInit
 {
   @ViewChild(IonSlides) slides: IonSlides;
   answer: any = {};
@@ -24,102 +24,64 @@ export class LevelFourPage implements OnInit
 
   ngOnInit() {
   }
-  btnRa() {
+  biscuits() {
+    let sound = new Howl({
+      src: ['./assets/foods/sound/biscuits.mp3']
+    });
+    sound.play();
+  }
+  zaw() {
+    let sound = new Howl({
+      src: ['./assets/foods/sound/zaw.mp3']
+    });
+    sound.play();
+  }
+  egg() {
+    let sound = new Howl({
+      src: ['./assets/foods/sound/egg.mp3']
+    });
+    sound.play();
+  }
+  momo() {
+    let sound = new Howl({
+      src: ['./assets/foods/sound/momo.mp3']
+    });
+    sound.play();
+  }
+  pickle() {
+    let sound = new Howl({
+      src: ['./assets/foods/sound/pickle.mp3']
+    });
+    sound.play();
+  }
+  curd() {
+    let sound = new Howl({
+      src: ['./assets/drinks/sound/curd.mp3']
+    });
+    sound.play();
+  }
+  juice() {
     var sound = new Howl({
-      src: ['./assets/colors/sound/black.mp3']
+      src: ['./assets/drinks/sound/juice.mp3']
     });
     sound.play();
   }
-  ka() {
+  tea() {
     let sound = new Howl({
-      src: ['./assets/colors/sound/blue.mp3']
+      src: ['./assets/drinks/sound/tea.mp3']
     });
     sound.play();
   }
-  ear() {
+  water() {
     let sound = new Howl({
-      src: ['./assets/body_parts/sound/ear.mp3']
-    });
-    sound.play();
-  }
-  eye() {
-    let sound = new Howl({
-      src: ['./assets/body_parts/sound/eye.mp3']
-    });
-    sound.play();
-  }
-  nose() {
-    let sound = new Howl({
-      src: ['./assets/body_parts/sound/nose.mp3']
-    });
-    sound.play();
-  }
-  mouth() {
-    let sound = new Howl({
-      src: ['./assets/body_parts/sound/mouth.mp3']
-    });
-    sound.play();
-  }
-  head() {
-    let sound = new Howl({
-      src: ['./assets/body_parts/sound/head.mp3']
-    });
-    sound.play();
-  }
-  ah() {
-    let sound = new Howl({
-      src: ['./assets/colors/sound/white.mp3']
+      src: ['./assets/drinks/sound/water.mp3']
     });
     sound.play();
   }
 
-  nga() {
-    let sound = new Howl({
-      src: ['./assets/consonants/sound/nga.mp3']
-    });
-    sound.play();
-  }
-
-  naro() {
+  poriadge() {
     var sound = new Howl({
-      src: ['./assets/colors/sound/yellow.mp3']
-    });
-    sound.play();
-  }
-
-  geku() {
-    var sound = new Howl({
-      src: ['./assets/colors/sound/pink.mp3']
-    });
-    sound.play();
-  }
-  btnNa() {
-    var sound = new Howl({
-      src: ['./assets/superscripts/sound/sa_go/ta.mp3']
-    });
-    sound.play();
-  }
-  btnTsa() {
-    var sound = new Howl({
-      src: ['./assets/week_days/sound/wednesday.mp3']
-    });
-    sound.play();
-  }
-  btnCha() {
-    var sound = new Howl({
-      src: ['./assets/week_days/sound/friday.mp3']
-    });
-    sound.play();
-  }
-  btnTsha() {
-    var sound = new Howl({
-      src: ['./assets/week_days/sound/sunday.mp3']
-    });
-    sound.play();
-  }
-  btnZa() {
-    var sound = new Howl({
-      src: ['./assets/week_days/sound/thursday.mp3']
+      src: ['./assets/drinks/sound/poriadge.mp3']
     });
     sound.play();
   }

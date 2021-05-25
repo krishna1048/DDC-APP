@@ -9,11 +9,11 @@ import { IonSlides } from '@ionic/angular';
 
 
 @Component({
-  selector: 'app-level-four',
-  templateUrl: './level-four.page.html',
-  styleUrls: ['./level-four.page.scss'],
+  selector: 'app-level-six',
+  templateUrl: './level-six.page.html',
+  styleUrls: ['./level-six.page.scss'],
 })
-export class LevelFourPage implements OnInit
+export class LevelSixPage implements OnInit
 {
   @ViewChild(IonSlides) slides: IonSlides;
   answer: any = {};
@@ -24,102 +24,71 @@ export class LevelFourPage implements OnInit
 
   ngOnInit() {
   }
-  btnRa() {
+  monkey() {
     var sound = new Howl({
-      src: ['./assets/colors/sound/black.mp3']
+      src: ['./assets/w_animals/sound/monkey.mp3']
     });
     sound.play();
   }
-  ka() {
+  tiger() {
     let sound = new Howl({
-      src: ['./assets/colors/sound/blue.mp3']
+      src: ['./assets/w_animals/sound/tiger.mp3']
     });
     sound.play();
   }
   ear() {
     let sound = new Howl({
-      src: ['./assets/body_parts/sound/ear.mp3']
+      src: ['./assets/d_animals/sound/cow.mp3']
     });
     sound.play();
   }
   eye() {
     let sound = new Howl({
-      src: ['./assets/body_parts/sound/eye.mp3']
+      src: ['./assets/d_animals/sound/dog.mp3']
     });
     sound.play();
   }
   nose() {
     let sound = new Howl({
-      src: ['./assets/body_parts/sound/nose.mp3']
+      src: ['./assets/d_animals/sound/cat.mp3']
     });
     sound.play();
   }
   mouth() {
     let sound = new Howl({
-      src: ['./assets/body_parts/sound/mouth.mp3']
+      src: ['./assets/d_animals/sound/sheep.mp3']
     });
     sound.play();
   }
   head() {
     let sound = new Howl({
-      src: ['./assets/body_parts/sound/head.mp3']
+      src: ['./assets/d_animals/sound/yak.mp3']
     });
     sound.play();
   }
-  ah() {
+  bear() {
     let sound = new Howl({
-      src: ['./assets/colors/sound/white.mp3']
+      src: ['./assets/w_animals/sound/bear.mp3']
     });
     sound.play();
   }
 
-  nga() {
+  deer() {
     let sound = new Howl({
-      src: ['./assets/consonants/sound/nga.mp3']
+      src: ['./assets/w_animals/sound/deer.mp3']
     });
     sound.play();
   }
 
-  naro() {
+  fox() {
     var sound = new Howl({
-      src: ['./assets/colors/sound/yellow.mp3']
+      src: ['./assets/w_animals/sound/fox.mp3']
     });
     sound.play();
   }
-
-  geku() {
+  elephant() {
     var sound = new Howl({
-      src: ['./assets/colors/sound/pink.mp3']
-    });
-    sound.play();
-  }
-  btnNa() {
-    var sound = new Howl({
-      src: ['./assets/superscripts/sound/sa_go/ta.mp3']
-    });
-    sound.play();
-  }
-  btnTsa() {
-    var sound = new Howl({
-      src: ['./assets/week_days/sound/wednesday.mp3']
-    });
-    sound.play();
-  }
-  btnCha() {
-    var sound = new Howl({
-      src: ['./assets/week_days/sound/friday.mp3']
-    });
-    sound.play();
-  }
-  btnTsha() {
-    var sound = new Howl({
-      src: ['./assets/week_days/sound/sunday.mp3']
-    });
-    sound.play();
-  }
-  btnZa() {
-    var sound = new Howl({
-      src: ['./assets/week_days/sound/thursday.mp3']
+      src: ['./assets/w_animals/sound/elephant.mp3']
     });
     sound.play();
   }
